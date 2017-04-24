@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class OrderToCashBasicFlow</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class OrderToCashBasicFlow</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; OrderToCashBasicFlow</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.832s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">create Sales Order</td>
+<td>0.378s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ship Sales Order</td>
+<td>0.357s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Asset Issuance</td>
+<td>0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Asset Issuance Accounting Transactions</td>
+<td>0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Asset Reservation</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Payment Accounting Transaction</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Sales Order Complete</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Shipment Invoice</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Shipment Invoice Accounting Transaction</td>
+<td>0.012s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[33m21:25:56.693  WARN  Test worker     o.drools.c.k.b.i.AbstractKieModule?[m No files found for KieBase TaxCalcKB
+?[32m21:25:56.694  INFO  Test worker     o.drools.c.k.b.i.KieRepositoryImpl?[m KieModule was added: MemoryKieModule[releaseId=org.moqui.mantle:mantle-usl:1.1.0]
+?[33m21:25:56.695  WARN  Test worker                   o.m.k.KieToolFactory?[m Found KIE session [ProductPriceKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:25:56.695  WARN  Test worker                   o.m.k.KieToolFactory?[m Found KIE session [TaxCalcKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:25:56.695  WARN  Test worker                   o.m.k.KieToolFactory?[m Found KIE session [OrderShippingRateKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[32m21:25:56.830  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [55500:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [13] weight [21.5]
+?[32m21:25:56.837  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:5, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:7, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:55500:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:56.886  INFO  Test worker                   OrderToCashBasicFlow?[m create Sales Order data check results: []
+?[32m21:25:56.899  INFO  Test worker                   OrderToCashBasicFlow?[m validate Asset Reservation data check results: 
+?[32m21:25:57.257  INFO  Test worker                   OrderToCashBasicFlow?[m ship Sales Order data check results: []
+?[32m21:25:57.268  INFO  Test worker                   OrderToCashBasicFlow?[m validate Sales Order Complete data check results: []
+?[32m21:25:57.284  INFO  Test worker                   OrderToCashBasicFlow?[m validate Asset Issuance data check results: 
+?[32m21:25:57.304  INFO  Test worker                   OrderToCashBasicFlow?[m validate Shipment Invoice Accounting Transaction data check results: 
+?[32m21:25:57.317  INFO  Test worker                   OrderToCashBasicFlow?[m validate Shipment Invoice data check results: []
+?[32m21:25:57.331  INFO  Test worker                   OrderToCashBasicFlow?[m validate Shipment Invoice Accounting Transaction data check results: 
+?[32m21:25:57.347  INFO  Test worker                   OrderToCashBasicFlow?[m validate Payment Accounting Transaction data check results: []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at Nov 24, 2016 9:26:09 PM</p>
+</div>
+</div>
+</body>
+</html>

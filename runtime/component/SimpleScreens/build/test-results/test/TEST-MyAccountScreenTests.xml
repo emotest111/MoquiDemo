@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MyAccountScreenTests" tests="17" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:27:21" hostname="dejcxps" time="5.72">
+  <properties/>
+  <testcase name="render My Account screen (User/Messages/FindMessage/createMessage?toPartyId=ORG_BLUTH_GOB&amp;subject=Screen Test Subject&amp;body=Screen Test Body, [])" classname="MyAccountScreenTests" time="0.546"/>
+  <testcase name="render My Account screen (User/Messages/FindMessage, [Screen Test Subject])" classname="MyAccountScreenTests" time="1.316"/>
+  <testcase name="render My Account screen (User/Messages/MessageThread?communicationEventId=61000, [Screen Test Subject])" classname="MyAccountScreenTests" time="0.136"/>
+  <testcase name="render My Account screen (User/Messages/MessageThread/SingleMessage?communicationEventId=61000, [Screen Test Subject, Screen Test Body])" classname="MyAccountScreenTests" time="0.207"/>
+  <testcase name="render My Account screen (User/Calendar, [New Event])" classname="MyAccountScreenTests" time="0.174"/>
+  <testcase name="render My Account screen (User/Calendar/MyCalendar/createEvent?workEffortName=Screen Test Event&amp;purposeEnumId=WepMeeting&amp;estimatedStartDate=1480051632827&amp;estimatedWorkDuration=2, [])" classname="MyAccountScreenTests" time="0.152"/>
+  <testcase name="render My Account screen (User/Calendar/EventDetail?workEffortId=61000, [Screen Test Event, Meeting])" classname="MyAccountScreenTests" time="0.518"/>
+  <testcase name="render My Account screen (User/Task/MyTasks/createTask?purposeEnumId=WepTask&amp;estimatedWorkTime=3&amp;workEffortName=Screen Test Task&amp;description=Screen Test Description, [])" classname="MyAccountScreenTests" time="0.125"/>
+  <testcase name="render My Account screen (User/Task/MyTasks, [61001, Screen Test Task, In Planning])" classname="MyAccountScreenTests" time="0.602"/>
+  <testcase name="render My Account screen (User/Task/TaskDetail?workEffortId=61001, [Screen Test Task, Screen Test Description, In Planning, Test Worker])" classname="MyAccountScreenTests" time="0.162"/>
+  <testcase name="render My Account screen (User/TimeEntries/recordTimeEntry?workEffortId=61001&amp;rateTypeEnumId=RatpStandard&amp;emplPositionClassId=Programmer&amp;hours=3&amp;pieceCount=150, [])" classname="MyAccountScreenTests" time="0.505"/>
+  <testcase name="render My Account screen (User/TimeEntries, [Screen Test Task, Standard, 3.00])" classname="MyAccountScreenTests" time="0.269"/>
+  <testcase name="render My Account screen (User/ContactInfo, [Email Addresses, Phone Numbers])" classname="MyAccountScreenTests" time="0.313"/>
+  <testcase name="render My Account screen (User/Account, [worker@test.com, Worker, Change Password])" classname="MyAccountScreenTests" time="0.268"/>
+  <testcase name="render My Account screen (Expense/FindExpenseInvoice, [Test Vendor, Billed Through])" classname="MyAccountScreenTests" time="0.194"/>
+  <testcase name="render My Account screen (Expense/EditExpenseInvoice?invoiceId=55900, [Test Worker, Billed Through, 849.12])" classname="MyAccountScreenTests" time="0.103"/>
+  <testcase name="render My Account screen (Expense/EditExpenseInvoiceItems?invoiceId=55900, [Expense - Travel Air, United SFO-LAX, Sales - Time Entry, 240.00])" classname="MyAccountScreenTests" time="0.125"/>
+  <system-out><![CDATA[?[32m21:27:12.946  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing Moqui Framework version 2.0.0
+ - runtime directory: /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime
+ - runtime config:    /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/conf/MoquiDevConf.xml
+?[32m21:27:13.163  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component tools              at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/base-component/tools
+?[32m21:27:13.171  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component webroot            at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/base-component/webroot
+?[32m21:27:13.172  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component HiveMind           at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/HiveMind
+?[32m21:27:13.173  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component PopCommerce        at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/PopCommerce
+?[32m21:27:13.175  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component SimpleScreens      at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/SimpleScreens
+?[32m21:27:13.176  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component example            at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/example
+?[32m21:27:13.177  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component mantle-udm         at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/mantle-udm
+?[32m21:27:13.180  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component mantle-usl         at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/mantle-usl
+?[32m21:27:13.181  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component moqui-camel        at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/moqui-camel
+?[32m21:27:13.182  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component moqui-elasticsearch at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/moqui-elasticsearch
+?[32m21:27:13.184  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component moqui-fop          at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/moqui-fop
+?[32m21:27:13.185  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added component moqui-kie          at file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/moqui-kie
+?[32m21:27:13.185  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Components after depends-on sort: [tools, webroot, moqui-elasticsearch, moqui-fop, mantle-udm, mantle-usl, SimpleScreens, HiveMind, moqui-kie, PopCommerce, moqui-camel, example]
+?[32m21:27:13.192  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Merging MoquiConf.xml file from component moqui-elasticsearch
+?[32m21:27:13.207  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Merging MoquiConf.xml file from component moqui-fop
+?[32m21:27:13.212  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Merging MoquiConf.xml file from component moqui-kie
+?[32m21:27:13.213  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Merging MoquiConf.xml file from component moqui-camel
+?[32m21:27:13.214  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Merging runtime configuration at /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/conf/MoquiDevConf.xml
+?[32m21:27:13.228  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing worker ThreadPoolExecutor: queue limit 65535, pool-core 4, pool-max 16, pool-alive 60s
+?[32m21:27:13.257  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added JARs from component moqui-elasticsearch: [lucene-join-6.2.1.jar, lucene-memory-6.2.1.jar, HdrHistogram-2.1.6.jar, jopt-simple-5.0.2.jar, jackson-dataformat-cbor-2.8.5.jar, lucene-queryparser-6.2.1.jar, lucene-highlighter-6.2.1.jar, jna-4.2.2.jar, moqui-elasticsearch-1.0.0.jar, jackson-databind-2.8.5.jar, lucene-backward-codecs-6.2.1.jar, lucene-queries-6.2.1.jar, hppc-0.7.1.jar, jackson-annotations-2.8.0.jar, securesm-1.1.jar, jackson-core-2.8.5.jar, t-digest-3.0.jar, lucene-spatial3d-6.2.1.jar, jackson-dataformat-smile-2.8.5.jar, jackson-dataformat-yaml-2.8.5.jar, elasticsearch-5.0.1.jar, lucene-suggest-6.2.1.jar, lucene-misc-6.2.1.jar, lucene-analyzers-common-6.2.1.jar, lucene-core-6.2.1.jar, lucene-spatial-extras-6.2.1.jar, lucene-spatial-6.2.1.jar, joda-time-2.9.5.jar, lucene-grouping-6.2.1.jar, lucene-sandbox-6.2.1.jar]
+?[32m21:27:13.267  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added JARs from component moqui-fop: [batik-transcoder-1.8.jar, xml-apis-ext-1.3.04.jar, antlr-runtime-3.5.2.jar, barcode4j-2.1.jar, batik-anim-1.8.jar, batik-script-1.8.jar, cssbox-pdf-1.0-SNAPSHOT.jar, batik-ext-1.8.jar, fontbox-2.0.3.jar, batik-gvt-1.8.jar, avalon-framework-impl-4.3.1.jar, batik-dom-1.8.jar, avalon-framework-api-4.3.1.jar, moqui-fop-1.0.0.jar, pdfbox-2.0.3.jar, batik-bridge-1.8.jar, batik-xml-1.8.jar, jstyleparser-1.23.jar, unbescape-1.1.3.RELEASE.jar, batik-css-1.8.jar, batik-awt-util-1.8.jar, batik-svggen-1.8.jar, batik-parser-1.8.jar, nekohtml-1.9.22.jar, xmlgraphics-commons-2.1.jar, cssbox-4.12.jar, barcode4j-fop-ext-2.1.jar, fop-2.1.jar, batik-svg-dom-1.8.jar, xml-apis-1.3.04.jar, xercesImpl-2.11.0.jar, batik-extension-1.8.jar, batik-util-1.8.jar]
+?[32m21:27:13.280  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added JARs from component moqui-kie: [poi-ooxml-3.15.jar, commons-codec-1.10.jar, antlr-runtime-3.5.2.jar, drools-templates-6.5.0.Final.jar, moqui-kie-1.0.0.jar, kie-api-6.5.0.Final.jar, xpp3_min-1.1.4c.jar, drools-compiler-6.5.0.Final.jar, mvel2-2.3.1.Final.jar, drools-jsr94-6.5.0.Final.jar, jsr94-1.1.jar, janino-2.5.16.jar, drools-decisiontables-6.5.0.Final.jar, drools-core-6.5.0.Final.jar, xstream-1.4.9.jar, protobuf-java-3.1.0.jar, kie-internal-6.5.0.Final.jar, poi-3.15.jar, commons-collections4-4.1.jar]
+?[32m21:27:13.286  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added JARs from component moqui-camel: [camel-csv-2.18.0.jar, jaxb-impl-2.2.11.jar, jaxb-core-2.2.11.jar, camel-freemarker-2.18.0.jar, camel-groovy-2.18.0.jar, moqui-camel-1.0.0.jar, camel-core-2.18.0.jar]
+?[32m21:27:13.287  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Added JARs from component example: [example-2.0.0.jar]
+?[32m21:27:13.287  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initialized ClassLoader in 55ms
+?[32m21:27:13.292  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Not loading disabled ToolFactory with class: org.moqui.impl.tools.JackrabbitRunToolFactory
+?[32m21:27:13.292  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Not loading disabled ToolFactory with class: org.moqui.impl.tools.SubEthaSmtpToolFactory
+?[32m21:27:13.296  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading ToolFactory with class: org.moqui.impl.tools.MCacheToolFactory
+?[32m21:27:13.302  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading ToolFactory with class: org.moqui.impl.tools.H2ServerToolFactory
+?[32m21:27:13.307  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading ToolFactory with class: org.moqui.elasticsearch.ElasticSearchToolFactory
+?[32m21:27:13.315  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading ToolFactory with class: org.moqui.fop.FopToolFactory
+?[32m21:27:13.320  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading ToolFactory with class: org.moqui.impl.service.camel.CamelToolFactory
+?[32m21:27:13.738  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading ToolFactory with class: org.moqui.kie.KieToolFactory
+?[32m21:27:13.761  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Cache Facade initialized
+?[32m21:27:13.858  INFO  Test worker         o.moqui.i.c.ResourceFacadeImpl?[m Using xsl-fo-handler-factory FOP (org.moqui.fop.FopToolFactory)
+?[32m21:27:13.859  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Resource Facade initialized
+?[33m21:27:13.891  WARN  Test worker                      b.t.Configuration?[m Cannot get the unique server ID for this JVM ('bitronix.tm.serverId'). Make sure it is configured and you use only US-ASCII characters. Will use IP address instead (unsafe for production usage!).
+?[32m21:27:13.961  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Transaction Facade initialized
+?[32m21:27:14.041  INFO  Test worker .moqui.i.c.TransactionInternalBitronix?[m Initializing DataSource transactional_DS (h2) with properties: [user:sa, url:jdbc:h2:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/db/h2/moqui;lock_timeout=30000]
+?[32m21:27:14.879  INFO  Test worker .moqui.i.c.TransactionInternalBitronix?[m Init DataSource transactional_DS (h2) isolation READ_COMMITTED (2), max pool 50
+?[32m21:27:14.972  INFO  Test worker           o.moqui.i.e.EntityFacadeImpl?[m Loaded 12 Entity ECA rules from 3 .eecas.xml files
+?[32m21:27:14.979  INFO  Test worker                    o.m.i.e.EntityCache?[m Entity Cache initialized, distributed cache invalidate enabled: false
+?[32m21:27:14.989  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Entity Facade initialized
+?[32m21:27:15.023  INFO  Test worker          o.moqui.i.s.ServiceFacadeImpl?[m Loaded 32 Service ECA rules from 8 .secas.xml files
+?[32m21:27:15.029  INFO  Test worker          o.moqui.i.s.ServiceFacadeImpl?[m Loaded [1] Email ECA rules from [file:/home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/example/service/Example.emecas.xml]
+?[32m21:27:15.065  INFO  Test worker                        o.m.i.s.RestApi?[m Loaded REST API from moqui.rest.xml (71 paths, 83 methods)
+?[32m21:27:15.067  INFO  Test worker                        o.m.i.s.RestApi?[m Loaded REST API from elasticsearch.rest.xml (12 paths, 10 methods)
+?[32m21:27:15.083  INFO  Test worker                        o.m.i.s.RestApi?[m Loaded REST API from mantle.rest.xml (357 paths, 359 methods)
+?[32m21:27:15.087  INFO  Test worker                        o.m.i.s.RestApi?[m Loaded REST API from example.rest.xml (12 paths, 28 methods)
+?[32m21:27:15.088  INFO  Test worker                        o.m.i.s.RestApi?[m Loaded REST API files, 4 roots, in 55ms
+?[32m21:27:15.120  INFO  Test worker          o.moqui.i.s.ServiceFacadeImpl?[m No distributed-factory specified, distributed async service calls will be run local only
+?[32m21:27:15.133  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Service Facade initialized
+?[32m21:27:15.139  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Screen Facade initialized
+?[32m21:27:15.140  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loading entity definitions
+?[32m21:27:15.227  INFO  Test worker           o.moqui.i.e.EntityFacadeImpl?[m Found entities in 41 files in 87ms
+?[32m21:27:15.487  INFO  Test worker           o.moqui.i.e.EntityFacadeImpl?[m Found 2 view-entity definitions in database (DbViewEntity records)
+?[32m21:27:15.789  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Loaded 680 entity definitions in 649ms
+?[32m21:27:15.791  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing ToolFactory: MCache
+?[32m21:27:15.795  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing ToolFactory: H2Server
+?[32m21:27:15.827  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m Started H2 remote server on port 9092 status: TCP server running at tcp://127.0.1.1:9092 (only local connections)
+?[32m21:27:15.828  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m H2 args: [-tcpPort, 9092, -ifExists, -baseDir, /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/db/h2]
+?[32m21:27:15.830  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m Found shutdown hook: java.lang.Thread Thread[pool-1-thread-1,5,main]
+?[32m21:27:15.830  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m Found shutdown hook: org.h2.engine.DatabaseCloser Thread[Thread-8,5,main]
+?[32m21:27:15.831  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m Found shutdown hook: org.spockframework.runtime.RunContext$2 Thread[org.spockframework.runtime.RunContext.stop(),5,main]
+?[32m21:27:15.831  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m Found shutdown hook: org.h2.engine.DatabaseCloser Thread[Thread-9,5,main]
+?[32m21:27:15.832  INFO  Test worker        o.moqui.i.t.H2ServerToolFactory?[m Found shutdown hook: java.util.logging.LogManager$Cleaner Thread[Thread-0,5,main]
+?[32m21:27:15.832  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing ToolFactory: ElasticSearch
+?[32m21:27:15.854  INFO  Test worker     o.moqui.e.ElasticSearchToolFactory?[m Starting ElasticSearch, home at /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/component/moqui-elasticsearch/home, data at /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/elasticsearch/data, logs at /home/jonesde/work/moquiwork/distro/MoquiDemo-2.0.0/runtime/log
+?[33m21:27:16.381  WARN  Test worker sticse.d.s.g.GroovyScriptEngineService?[m [groovy] scripts are deprecated, use [painless] scripts instead
+?[32m21:27:18.333  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing ToolFactory: FOP
+?[32m21:27:18.796  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing ToolFactory: Camel
+?[32m21:27:18.796  INFO  Test worker         o.moqui.i.s.c.CamelToolFactory?[m Starting Camel
+?[32m21:27:19.082  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing ToolFactory: KIE
+?[32m21:27:19.083  INFO  Test worker                   o.m.k.KieToolFactory?[m Starting KIE (Drools, jBPM, etc)
+?[33m21:27:20.436  WARN  Test worker     o.drools.c.k.b.i.AbstractKieModule?[m No files found for KieBase TaxCalcKB
+?[32m21:27:20.503  INFO  Test worker     o.drools.c.k.b.i.KieRepositoryImpl?[m KieModule was added: MemoryKieModule[releaseId=org.moqui.mantle:mantle-usl:1.1.0]
+?[32m21:27:20.747  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Execution Context Factory initialized in 7.855 seconds
+?[32m21:27:20.983  INFO  Test worker           o.moqui.i.e.EntityFacadeImpl?[m Created 1295 automatic reverse relationships
+?[32m21:27:21.024  INFO  Test worker             o.moqui.i.e.EntityDataFeed?[m Built entity.data.feed.info cache for in 91ms, entries for 31 entities
+?[32m21:27:21.368  INFO enTestRender .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing webapp webroot http://null:null https://null:null https enabled? false
+?[32m21:27:21.714  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition apps/my/User/Messages/FindMessage/createMessage in 489ms, redirecting to screen path URL: http://localhost:8080/apps/my/User/Messages/FindMessage
+?[32m21:27:21.714  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/apps/my/User/Messages/FindMessage
+?[32m21:27:23.038  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Messages/FindMessage in 1294ms (text/html) session TestSessionId
+?[32m21:27:23.176  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Messages/MessageThread in 135ms (text/html) session TestSessionId
+?[32m21:27:23.383  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Messages/MessageThread/SingleMessage in 206ms (text/html) session TestSessionId
+?[32m21:27:23.556  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Calendar/MyCalendar in 171ms (text/html) session TestSessionId
+?[32m21:27:23.707  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition apps/my/User/Calendar/MyCalendar/createEvent in 144ms, redirecting to screen path URL: http://localhost:8080/apps/my/User/Calendar/EventDetail?workEffortId=61000
+?[32m21:27:23.708  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/apps/my/User/Calendar/EventDetail?workEffortId=61000
+?[32m21:27:24.227  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Calendar/EventDetail in 510ms (text/html) session TestSessionId
+?[32m21:27:24.349  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition apps/my/User/Task/MyTasks/createTask in 120ms, redirecting to screen path URL: http://localhost:8080/apps/my/User/Task/TaskDetail?workEffortId=61001
+?[32m21:27:24.352  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/apps/my/User/Task/TaskDetail?workEffortId=61001
+?[32m21:27:24.954  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Task/MyTasks in 598ms (text/html) session TestSessionId
+?[32m21:27:25.117  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Task/TaskDetail in 161ms (text/html) session TestSessionId
+?[32m21:27:25.620  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition apps/my/User/TimeEntries/recordTimeEntry in 497ms, redirecting to screen path URL: http://localhost:8080/apps/my/User/TimeEntries
+?[32m21:27:25.621  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/apps/my/User/TimeEntries
+?[32m21:27:25.891  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/TimeEntries in 265ms (text/html) session TestSessionId
+?[32m21:27:26.203  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/ContactInfo in 309ms (text/html) session TestSessionId
+?[32m21:27:26.471  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/User/Account in 265ms (text/html) session TestSessionId
+?[32m21:27:26.666  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/Expense/FindExpenseInvoice in 192ms (text/html) session TestSessionId
+?[32m21:27:26.769  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/Expense/EditExpenseInvoice in 98ms (text/html) session TestSessionId
+?[32m21:27:26.895  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/my/Expense/EditExpenseInvoiceItems in 119ms (text/html) session TestSessionId
+?[32m21:27:26.902  INFO  Test worker                   MyAccountScreenTests?[m Rendered 17 screens (0 errors) in 5.856s, output 431k chars
+?[32m21:27:26.993  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m ArtifactHitBins stored
+?[32m21:27:26.994  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Scheduled executor pool shut down
+Destroying ToolFactory: KIE
+Destroying ToolFactory: Camel
+?[32m21:27:26.994  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Worker pool shut down
+?[32m21:27:26.994  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Destroying ToolFactory: KIE
+?[32m21:27:26.994  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Destroying ToolFactory: Camel
+?[32m21:27:27.021  INFO  Test worker         o.moqui.i.s.c.CamelToolFactory?[m Camel stopped
+Destroying ToolFactory: FOP
+Destroying ToolFactory: ElasticSearch
+?[32m21:27:27.021  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Destroying ToolFactory: FOP
+?[32m21:27:27.021  INFO  Test worker .moqui.i.c.ExecutionContextFactoryImpl?[m Destroying ToolFactory: ElasticSearch
+Destroying ToolFactory: H2Server
+Destroying ToolFactory: MCache
+Facades destroyed
+Shut down H2 Server
+Moqui ExecutionContextFactory Destroyed
+]]></system-out>
+  <system-err><![CDATA[Nov 24, 2016 9:27:18 PM org.apache.fop.apps.FopConfParser configure
+INFO: Default page-height set to: 11.00in
+Nov 24, 2016 9:27:18 PM org.apache.fop.apps.FopConfParser configure
+INFO: Default page-width set to: 8.50in
+]]></system-err>
+</testsuite>

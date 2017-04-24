@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class AssetReservationMultipleThreads</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class AssetReservationMultipleThreads</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; AssetReservationMultipleThreads</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.927s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Asset reservation from multiple threads</td>
+<td>2.927s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[32m21:25:49.015  INFO  Test worker        AssetReservationMultipleThreads?[m Initial ATP of DEMO_1_1 is 100
+?[32m21:25:49.939  INFO    Thread-13                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.OrderHeader pks: [orderId]
+?[32m21:25:49.942  INFO    Thread-13                   o.m.i.e.EntityDbMeta?[m Created table ORDER_HEADER for entity mantle.order.OrderHeader in group transactional
+?[32m21:25:50.015  INFO    Thread-13                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.OrderPart pks: [orderId, orderPartSeqId]
+?[32m21:25:50.027  INFO    Thread-13                   o.m.i.e.EntityDbMeta?[m Created table ORDER_PART for entity mantle.order.OrderPart in group transactional
+?[32m21:25:50.094  INFO    Thread-13                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.OrderItem pks: [orderId, orderItemSeqId]
+?[32m21:25:50.096  INFO    Thread-13                   o.m.i.e.EntityDbMeta?[m Created table ORDER_ITEM for entity mantle.order.OrderItem in group transactional
+?[32m21:25:50.668  INFO    Thread-12           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [100004:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [60] weight [300]
+?[32m21:25:50.668  INFO    Thread-15           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [100003:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [60] weight [300]
+?[32m21:25:50.674  INFO    Thread-14           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [100002:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [60] weight [300]
+?[32m21:25:50.704  INFO    Thread-13           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [100000:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [60] weight [300]
+?[32m21:25:50.762  INFO    Thread-11           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [100001:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [60] weight [300]
+?[32m21:25:50.886  INFO    Thread-15           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:6E+1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:100003:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:50.887  INFO    Thread-14           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:6E+1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:100002:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:50.887  INFO    Thread-13           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:6E+1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:100000:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:50.888  INFO    Thread-12           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:6E+1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:100004:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:50.889  INFO    Thread-11           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:6E+1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:100001:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:50.918  INFO    Thread-11                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.payment.Payment pks: [paymentId]
+?[32m21:25:50.920  INFO    Thread-11                   o.m.i.e.EntityDbMeta?[m Created table PAYMENT for entity mantle.account.payment.Payment in group transactional
+?[32m21:25:51.147  INFO    Thread-15                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.product.issuance.AssetReservation pks: [assetReservationId]
+?[32m21:25:51.151  INFO    Thread-15                   o.m.i.e.EntityDbMeta?[m Created table ASSET_RESERVATION for entity mantle.product.issuance.AssetReservation in group transactional
+?[32m21:25:51.542  INFO    Thread-15                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.method.PaymentGatewayResponse pks: [paymentGatewayResponseId]
+?[32m21:25:51.544  INFO    Thread-15                   o.m.i.e.EntityDbMeta?[m Created table PAYMENT_GATEWAY_RESPONSE for entity mantle.account.method.PaymentGatewayResponse in group transactional
+?[32m21:25:51.931  INFO  Test worker        AssetReservationMultipleThreads?[m After ATP of DEMO_1_1 is -200
+?[32m21:25:51.934  INFO  Test worker        AssetReservationMultipleThreads?[m All DEMO_1_1 AssetReservations: [[assetReservationId:100000, orderItemSeqId:01, sequenceNum:0, productId:DEMO_1_1, quantity:6E+1, priority:null, orderId:100003, currentPromisedDate:null, originalPromisedDate:null, assetId:DEMO_1_1A, quantityNotIssued:6E+1, reservedDate:2016-11-24 21:25:49.009, quantityNotAvailable:0, reservationOrderEnumId:AsResOrdFifoRec, lastUpdatedStamp:2016-11-24 21:25:49.078], [assetReservationId:100001, lastUpdatedStamp:2016-11-24 21:25:49.068, orderItemSeqId:01, sequenceNum:0, productId:DEMO_1_1, priority:null, quantity:4E+1, orderId:100002, currentPromisedDate:null, originalPromisedDate:null, assetId:DEMO_1_1A, reservedDate:2016-11-24 21:25:49.008, quantityNotAvailable:0, quantityNotIssued:4E+1, reservationOrderEnumId:AsResOrdFifoRec], [quantity:2E+1, lastUpdatedStamp:2016-11-24 21:25:49.068, orderItemSeqId:01, quantityNotIssued:2E+1, sequenceNum:0, quantityNotAvailable:2E+1, productId:DEMO_1_1, priority:null, assetReservationId:100002, orderId:100002, currentPromisedDate:null, originalPromisedDate:null, reservedDate:2016-11-24 21:25:49.008, reservationOrderEnumId:AsResOrdFifoRec, assetId:55300], [lastUpdatedStamp:2016-11-24 21:25:49.036, quantityNotAvailable:6E+1, orderItemSeqId:01, sequenceNum:0, productId:DEMO_1_1, orderId:100001, quantity:6E+1, priority:null, reservedDate:2016-11-24 21:25:49.005, assetReservationId:100003, currentPromisedDate:null, originalPromisedDate:null, quantityNotIssued:6E+1, reservationOrderEnumId:AsResOrdFifoRec, assetId:55301], [assetId:55302, quantityNotAvailable:6E+1, lastUpdatedStamp:2016-11-24 21:25:49.037, orderItemSeqId:01, sequenceNum:0, productId:DEMO_1_1, orderId:100004, reservedDate:2016-11-24 21:25:49.006, quantity:6E+1, priority:null, assetReservationId:100004, currentPromisedDate:null, originalPromisedDate:null, quantityNotIssued:6E+1, reservationOrderEnumId:AsResOrdFifoRec], [assetId:55303, quantityNotAvailable:6E+1, orderItemSeqId:01, sequenceNum:0, productId:DEMO_1_1, reservedDate:2016-11-24 21:25:49.007, assetReservationId:100005, quantity:6E+1, priority:null, orderId:100000, currentPromisedDate:null, originalPromisedDate:null, quantityNotIssued:6E+1, lastUpdatedStamp:2016-11-24 21:25:49.074, reservationOrderEnumId:AsResOrdFifoRec]]
+?[32m21:25:51.935  INFO  Test worker        AssetReservationMultipleThreads?[m Total not available of DEMO_1_1 in AssetReservations is 200
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at Nov 24, 2016 9:26:09 PM</p>
+</div>
+</div>
+</body>
+</html>

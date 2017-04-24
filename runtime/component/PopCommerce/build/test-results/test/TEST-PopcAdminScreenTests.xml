@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PopcAdminScreenTests" tests="43" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:26:47" hostname="dejcxps" time="17.606">
+  <properties/>
+  <testcase name="render POP Commerce Admin screens with no required parameters" classname="PopcAdminScreenTests" time="7.149"/>
+  <testcase name="render POP Commerce Admin screen (Supplier/EditSupplier?partyId=ZiddlemanInc, [Ziddleman Incorporated, Supplier, 1-702-987-6543, 1350 E. Flamingo Rd. #9876])" classname="PopcAdminScreenTests" time="0.555"/>
+  <testcase name="render POP Commerce Admin screen (Customer/EditCustomer?partyId=CustJqp, [Joe, joe@public.com, Visa ************1111, 1-702-234-5678, 1350 E. Flamingo Rd. #2345])" classname="PopcAdminScreenTests" time="0.569"/>
+  <testcase name="render POP Commerce Admin screen (User/EditUser?partyId=EX_JOHN_DOE, [john.doe@test.com, John])" classname="PopcAdminScreenTests" time="0.438"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Category/EditCategory?productCategoryId=DEMO_ONE, [Demo Category One])" classname="PopcAdminScreenTests" time="0.074"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Category/EditProducts?productCategoryId=DEMO_ONE, [Demo Product One-One, Asset (Good)])" classname="PopcAdminScreenTests" time="0.102"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Product/EditProduct?productId=DEMO_1_1, [Demo Product One-One, Shipping Weight])" classname="PopcAdminScreenTests" time="0.378"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Product/EditCategories?productId=DEMO_1_1, [Demo Category One, Catalog])" classname="PopcAdminScreenTests" time="0.098"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Product/EditAssocs?productId=DEMO_1_1, [])" classname="PopcAdminScreenTests" time="0.25"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Product/EditPrices?productId=DEMO_1_1, [ZiddlemanInc, 16.99])" classname="PopcAdminScreenTests" time="0.132"/>
+  <testcase name="render POP Commerce Admin screen (Catalog/Search?queryString=demo, [Demo Product One-One, Asset (Good)])" classname="PopcAdminScreenTests" time="0.412"/>
+  <testcase name="render POP Commerce Admin screen (Order/OrderDetail?orderId=55400, [$23,795.00, Shipment #55400, Demo Product One-One])" classname="PopcAdminScreenTests" time="1.308"/>
+  <testcase name="render POP Commerce Admin screen (Order/PrintOrder?orderId=55400&amp;renderMode=xsl-fo, [Ziziwork Retail, Demo Product, $23,795.00])" classname="PopcAdminScreenTests" time="0.069"/>
+  <testcase name="render POP Commerce Admin screen (Order/OrderDetail?orderId=55401, [$9,000.00, Shipment #55401, Picker Bot 2000])" classname="PopcAdminScreenTests" time="0.043"/>
+  <testcase name="render POP Commerce Admin screen (Shipment/ShipmentDetail?shipmentId=55400, [Invoice #55400, Demo Product One-One])" classname="PopcAdminScreenTests" time="0.542"/>
+  <testcase name="render POP Commerce Admin screen (Shipment/ShipmentDetail?shipmentId=55401, [Order #55401, Picker Bot 2000])" classname="PopcAdminScreenTests" time="0.252"/>
+  <testcase name="render POP Commerce Admin screen (Facility/EditFacility?facilityId=ORG_ZIZI_RETAIL_WH, [Ziziwork Retail Warehouse, 51 W. Center St.])" classname="PopcAdminScreenTests" time="0.197"/>
+  <testcase name="render POP Commerce Admin screen (Facility/EditFacilityLocations?facilityId=ORG_ZIZI_RETAIL_WH, [])" classname="PopcAdminScreenTests" time="0.075"/>
+  <testcase name="render POP Commerce Admin screen (Facility/FacilityCalendar?facilityId=ORG_ZIZI_RETAIL_WH, [])" classname="PopcAdminScreenTests" time="0.06"/>
+  <testcase name="render POP Commerce Admin screen (Asset/AssetDetail?assetId=55400, [DEMO_1_1, ORG_ZIZI_RETAIL, Current: Available])" classname="PopcAdminScreenTests" time="0.551"/>
+  <testcase name="render POP Commerce Admin screen (Asset/AssetCalendar?assetId=55400, [])" classname="PopcAdminScreenTests" time="0.077"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Invoice/FindInvoice?statusId_op=in&amp;statusId=InvoiceReceived,InvoiceApproved&amp;toPartyId=ORG_ZIZI_RETAIL, [Ziddleman Incorporated, Ziziwork Retail, Sales/Purchase])" classname="PopcAdminScreenTests" time="0.031"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Invoice/EditInvoice?invoiceId=55100, [Current: Approved, Unpaid $1,824.25, ORG_ZIZI_RETAIL])" classname="PopcAdminScreenTests" time="0.221"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Invoice/EditInvoice?invoiceId=55400, [ORG_ZIZI_RETAIL, Current: Payment Sent, Applied Payments $23,830.00])" classname="PopcAdminScreenTests" time="0.033"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Invoice/EditInvoiceItems?invoiceId=55400, [Demo Product One-One, Sales - Shipping and Handling])" classname="PopcAdminScreenTests" time="0.134"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Invoice/PrintInvoice?invoiceId=55400&amp;renderMode=xsl-fo, [1350 E. Flamingo Rd. #9876, Las Vegas, NV 89119-5263, Asset - Inventory])" classname="PopcAdminScreenTests" time="0.129"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Payment/EditPayment?paymentId=55400, [ORG_ZIZI_RETAIL, Applied $23,830.00, Current: Delivered])" classname="PopcAdminScreenTests" time="0.365"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Payment/PaymentCheck?paymentIds=55400&amp;renderMode=xsl-fo, [Ziddleman Incorporated, Twenty three thousand eight hundred thirty and 00/100, Picker Bot 2000])" classname="PopcAdminScreenTests" time="0.161"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Payment/PaymentDetail?paymentIds=55400&amp;renderMode=xsl-fo, [Ziddleman Incorporated, $23,830.00, Picker Bot 2000])" classname="PopcAdminScreenTests" time="0.036"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/FinancialAccount/EditFinancialAccount?finAccountId=55700, [Ziziwork Retail, Joe Public, Current: Active])" classname="PopcAdminScreenTests" time="0.136"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/FinancialAccount/FinancialAccountTrans?finAccountId=55700, [Customer Service Credit, Ziziwork Retail ])" classname="PopcAdminScreenTests" time="0.14"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Transaction/EditTransaction?acctgTransId=55700, [Joe Public, 430000000, CUSTOMER SERVICE CREDITS])" classname="PopcAdminScreenTests" time="0.319"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/GlAccount/EditGlAccount?glAccountId=110000000, [CASH AND EQUIVALENT ASSET, Ziziwork Industries])" classname="PopcAdminScreenTests" time="0.238"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/BalanceSheet?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100&amp;detail=true, [121000000: ACCOUNTS RECEIVABLE, 210000000: ACCOUNTS PAYABLE])" classname="PopcAdminScreenTests" time="0.51"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/IncomeStatement?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100&amp;detail=true, [411000000: PRODUCT SALES, 614200000: NETWORK CHARGES])" classname="PopcAdminScreenTests" time="0.154"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/CashFlowStatement?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100&amp;detail=true, [111100000: GENERAL CHECKING ACCOUNT, 182000000: ACCUMULATED DEPRECIATION - EQUIPMENT])" classname="PopcAdminScreenTests" time="0.184"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/RetainedEarningsStatement?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100, [Net Earnings, Ziziwork Retail Fiscal])" classname="PopcAdminScreenTests" time="0.08"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/FinancialRatios?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100, [Total Assets, Accounts Receivable])" classname="PopcAdminScreenTests" time="0.365"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/PostedAmountSummary?organizationPartyId=ORG_ZIZI_RETAIL&amp;dateRange_poffset=0&amp;dateRange_period=Year, [ACCOUNTS PAYABLE, DEPRECIATION - EQUIPMENT])" classname="PopcAdminScreenTests" time="0.229"/>
+  <testcase name="render POP Commerce Admin screen (Accounting/Reports/PostedBalanceSummary?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodId=55100, [CUSTOMER SERVICE CREDITS (Contra Revenue), NET INCOME (Income)])" classname="PopcAdminScreenTests" time="0.199"/>
+  <testcase name="render POP Commerce Admin screen (Vendor/EditVendor?partyId=ORG_ZIZI_RETAIL, [Ziziwork Retail, Internal, payment.biziwork.retail@test.com])" classname="PopcAdminScreenTests" time="0.339"/>
+  <testcase name="render POP Commerce Admin screen (Vendor/EditUsers?partyId=ORG_ZIZI_RETAIL, [])" classname="PopcAdminScreenTests" time="0.076"/>
+  <testcase name="render POP Commerce Admin screen (Vendor/Accounting/AcctgPreference?partyId=ORG_ZIZI_RETAIL, [Ziziwork Industries, Clone Accounting Settings])" classname="PopcAdminScreenTests" time="0.182"/>
+  <system-out><![CDATA[?[32m21:26:49.098  INFO enTestRender .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing webapp webroot http://null:null https://null:null https enabled? false
+?[32m21:26:50.286  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/dashboard in 1257ms (text/html) session TestSessionId
+?[32m21:26:50.293  INFO  Test worker                   PopcAdminScreenTests?[m Rendered dashboard in 1298ms, 28524 characters
+?[32m21:26:50.707  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Supplier/FindSupplier in 413ms (text/html) session TestSessionId
+?[32m21:26:50.708  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Supplier/FindSupplier in 414ms, 41317 characters
+?[32m21:26:50.864  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Customer/FindCustomer in 153ms (text/html) session TestSessionId
+?[32m21:26:50.865  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Customer/FindCustomer in 153ms, 41659 characters
+?[32m21:26:51.107  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/User/FindUser in 240ms (text/html) session TestSessionId
+?[32m21:26:51.107  INFO  Test worker                   PopcAdminScreenTests?[m Rendered User/FindUser in 240ms, 59332 characters
+?[32m21:26:51.314  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Category/FindCategory in 206ms (text/html) session TestSessionId
+?[32m21:26:51.315  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Catalog/Category/FindCategory in 207ms, 34183 characters
+?[32m21:26:51.420  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/FeatureGroup/FindFeatureGroup in 102ms (text/html) session TestSessionId
+?[32m21:26:51.420  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Catalog/FeatureGroup/FindFeatureGroup in 102ms, 25052 characters
+?[32m21:26:51.505  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Feature/FindFeature in 84ms (text/html) session TestSessionId
+?[32m21:26:51.506  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Catalog/Feature/FindFeature in 85ms, 31003 characters
+?[32m21:26:51.661  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Product/FindProduct in 153ms (text/html) session TestSessionId
+?[32m21:26:51.662  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Catalog/Product/FindProduct in 155ms, 54231 characters
+?[32m21:26:51.828  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Search in 161ms (text/html) session TestSessionId
+?[32m21:26:51.829  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Catalog/Search in 163ms, 32247 characters
+?[32m21:26:52.149  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Order/FindOrder in 318ms (text/html) session TestSessionId
+?[32m21:26:52.151  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Order/FindOrder in 318ms, 81319 characters
+?[32m21:26:52.235  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.work.effort.WorkEffortAssetAssign pks: [workEffortId, assetId, fromDate]
+?[32m21:26:52.239  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Created table WORK_EFFORT_ASSET_ASSIGN for entity mantle.work.effort.WorkEffortAssetAssign in group transactional
+?[32m21:26:52.357  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Picking/FindPicklist in 203ms (text/html) session TestSessionId
+?[32m21:26:52.359  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Picking/FindPicklist in 204ms, 40554 characters
+?[32m21:26:52.794  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Shipment/FindShipment in 428ms (text/html) session TestSessionId
+?[32m21:26:52.795  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Shipment/FindShipment in 428ms, 61959 characters
+?[32m21:26:52.898  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Facility/FindFacility in 102ms (text/html) session TestSessionId
+?[32m21:26:52.899  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Facility/FindFacility in 102ms, 40632 characters
+?[32m21:26:53.152  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Asset/FindAsset in 252ms (text/html) session TestSessionId
+?[32m21:26:53.153  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Asset/FindAsset in 253ms, 102073 characters
+?[32m21:26:53.409  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Invoice/FindInvoice in 255ms (text/html) session TestSessionId
+?[32m21:26:53.412  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/Invoice/FindInvoice in 257ms, 68568 characters
+?[32m21:26:53.627  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Payment/FindPayment in 209ms (text/html) session TestSessionId
+?[32m21:26:53.628  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/Payment/FindPayment in 209ms, 52926 characters
+?[32m21:26:53.723  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/FinancialAccount/FindFinancialAccount in 93ms (text/html) session TestSessionId
+?[32m21:26:53.724  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/FinancialAccount/FindFinancialAccount in 93ms, 52583 characters
+?[32m21:26:54.053  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Transaction/FindTransaction in 328ms (text/html) session TestSessionId
+?[32m21:26:54.053  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/Transaction/FindTransaction in 328ms, 99463 characters
+?[32m21:26:54.191  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Transaction/FindTransactionEntry in 137ms (text/html) session TestSessionId
+?[32m21:26:54.191  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/Transaction/FindTransactionEntry in 137ms, 93726 characters
+?[32m21:26:54.257  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/FindJournal in 63ms (text/html) session TestSessionId
+?[32m21:26:54.258  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/FindJournal in 63ms, 52408 characters
+?[32m21:26:54.406  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/TimePeriod/FindTimePeriod in 147ms (text/html) session TestSessionId
+?[32m21:26:54.407  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/TimePeriod/FindTimePeriod in 148ms, 62878 characters
+?[32m21:26:54.628  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/GlAccount/FindGlAccount in 218ms (text/html) session TestSessionId
+?[32m21:26:54.628  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/GlAccount/FindGlAccount in 218ms, 84496 characters
+?[32m21:26:54.799  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/ReportList in 169ms (text/html) session TestSessionId
+?[32m21:26:54.800  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Accounting/Reports/ReportList in 170ms, 69158 characters
+?[32m21:26:55.009  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Vendor/FindVendor in 208ms (text/html) session TestSessionId
+?[32m21:26:55.009  INFO  Test worker                   PopcAdminScreenTests?[m Rendered Vendor/FindVendor in 208ms, 38296 characters
+?[32m21:26:55.571  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Supplier/EditSupplier in 552ms (text/html) session TestSessionId
+?[32m21:26:56.142  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Customer/EditCustomer in 569ms (text/html) session TestSessionId
+?[32m21:26:56.579  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/User/EditUser in 429ms (text/html) session TestSessionId
+?[32m21:26:56.654  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Category/EditCategory in 72ms (text/html) session TestSessionId
+?[32m21:26:56.756  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Category/EditProducts in 100ms (text/html) session TestSessionId
+?[32m21:26:57.133  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Product/EditProduct in 375ms (text/html) session TestSessionId
+?[32m21:26:57.233  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Product/EditCategories in 96ms (text/html) session TestSessionId
+?[32m21:26:57.484  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Product/EditAssocs in 247ms (text/html) session TestSessionId
+?[32m21:26:57.616  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Product/EditPrices in 129ms (text/html) session TestSessionId
+?[32m21:26:58.030  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Catalog/Search in 410ms (text/html) session TestSessionId
+?[32m21:26:58.506  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.OrderPartParty pks: [orderId, orderPartSeqId, partyId, roleTypeId]
+?[32m21:26:58.513  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Created table ORDER_PART_PARTY for entity mantle.order.OrderPartParty in group transactional
+?[32m21:26:59.339  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Order/OrderDetail in 1308ms (text/html) session TestSessionId
+?[32m21:26:59.408  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Order/PrintOrder in 68ms (text/xml) session TestSessionId
+?[32m21:26:59.451  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Order/OrderDetail in 41ms (text/html) session TestSessionId
+?[32m21:26:59.993  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Shipment/ShipmentDetail in 539ms (text/html) session TestSessionId
+?[32m21:27:00.246  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Shipment/ShipmentDetail in 240ms (text/html) session TestSessionId
+?[32m21:27:00.444  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Facility/EditFacility in 195ms (text/html) session TestSessionId
+?[32m21:27:00.520  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Facility/EditFacilityLocations in 74ms (text/html) session TestSessionId
+?[32m21:27:00.581  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Facility/FacilityCalendar in 59ms (text/html) session TestSessionId
+?[32m21:27:01.131  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Asset/AssetDetail in 549ms (text/html) session TestSessionId
+?[32m21:27:01.208  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Asset/AssetCalendar in 75ms (text/html) session TestSessionId
+?[32m21:27:01.239  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Invoice/FindInvoice in 29ms (text/html) session TestSessionId
+?[32m21:27:01.461  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Invoice/EditInvoice in 218ms (text/html) session TestSessionId
+?[32m21:27:01.626  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Invoice/EditInvoiceItems in 130ms (text/html) session TestSessionId
+?[32m21:27:01.756  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Invoice/PrintInvoice in 127ms (text/xml) session TestSessionId
+?[32m21:27:02.122  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Payment/EditPayment in 364ms (text/html) session TestSessionId
+?[32m21:27:02.283  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Payment/PaymentCheck in 159ms (text/xml) session TestSessionId
+?[32m21:27:02.318  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Payment/PaymentDetail in 34ms (text/xml) session TestSessionId
+?[32m21:27:02.454  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/FinancialAccount/EditFinancialAccount in 135ms (text/html) session TestSessionId
+?[32m21:27:02.592  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/FinancialAccount/FinancialAccountTrans in 135ms (text/html) session TestSessionId
+?[32m21:27:02.914  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Transaction/EditTransaction in 317ms (text/html) session TestSessionId
+?[32m21:27:03.153  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/GlAccount/EditGlAccount in 236ms (text/html) session TestSessionId
+?[32m21:27:03.662  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/BalanceSheet in 507ms (text/html) session TestSessionId
+?[32m21:27:03.816  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/IncomeStatement in 149ms (text/html) session TestSessionId
+?[32m21:27:04.001  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/CashFlowStatement in 179ms (text/html) session TestSessionId
+?[32m21:27:04.081  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/RetainedEarningsStatement in 78ms (text/html) session TestSessionId
+?[32m21:27:04.446  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/FinancialRatios in 364ms (text/html) session TestSessionId
+?[32m21:27:04.675  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/PostedAmountSummary in 226ms (text/html) session TestSessionId
+?[32m21:27:04.874  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Accounting/Reports/PostedBalanceSummary in 198ms (text/html) session TestSessionId
+?[32m21:27:05.214  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Vendor/EditVendor in 338ms (text/html) session TestSessionId
+?[32m21:27:05.291  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Vendor/EditUsers in 76ms (text/html) session TestSessionId
+?[32m21:27:05.473  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/PopcAdmin/Vendor/Accounting/AcctgPreference in 181ms (text/html) session TestSessionId
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

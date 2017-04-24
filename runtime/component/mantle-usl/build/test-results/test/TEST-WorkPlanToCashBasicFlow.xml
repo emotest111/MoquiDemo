@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WorkPlanToCashBasicFlow" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:26:03" hostname="dejcxps" time="3.815">
+  <properties/>
+  <testcase name="create Vendor" classname="WorkPlanToCashBasicFlow" time="0.891"/>
+  <testcase name="create Worker and Rates" classname="WorkPlanToCashBasicFlow" time="0.026"/>
+  <testcase name="create Client" classname="WorkPlanToCashBasicFlow" time="0.03"/>
+  <testcase name="create TEST Project" classname="WorkPlanToCashBasicFlow" time="0.167"/>
+  <testcase name="create TEST Milestones" classname="WorkPlanToCashBasicFlow" time="0.127"/>
+  <testcase name="create TEST Project Tasks" classname="WorkPlanToCashBasicFlow" time="0.53"/>
+  <testcase name="record TimeEntries and complete Tasks" classname="WorkPlanToCashBasicFlow" time="0.837"/>
+  <testcase name="create Request and Task for Request" classname="WorkPlanToCashBasicFlow" time="0.199"/>
+  <testcase name="create Worker Time and Expense Invoice and record Payment" classname="WorkPlanToCashBasicFlow" time="0.862"/>
+  <testcase name="create Client Time and Expense Invoice and Finalize" classname="WorkPlanToCashBasicFlow" time="0.124"/>
+  <testcase name="record Payment for Client Time and Expense Invoice" classname="WorkPlanToCashBasicFlow" time="0.02"/>
+  <system-out><![CDATA[?[32m21:26:04.053  INFO  Test worker                WorkPlanToCashBasicFlow?[m TEST create Vendor data check results: []
+?[32m21:26:04.080  INFO  Test worker                WorkPlanToCashBasicFlow?[m TEST create Vendor data check results: []
+?[32m21:26:04.110  INFO  Test worker                WorkPlanToCashBasicFlow?[m TEST create Vendor data check results: []
+?[32m21:26:04.277  INFO  Test worker                WorkPlanToCashBasicFlow?[m TEST Project data check results: []
+?[32m21:26:04.405  INFO  Test worker                WorkPlanToCashBasicFlow?[m TEST Milestones data check results: []
+?[32m21:26:04.935  INFO  Test worker                WorkPlanToCashBasicFlow?[m TEST Milestones data check results: []
+?[32m21:26:05.771  INFO  Test worker                WorkPlanToCashBasicFlow?[m record TimeEntries and complete Tasks data check results: []
+?[32m21:26:05.971  INFO  Test worker                WorkPlanToCashBasicFlow?[m create Request and Task for Request data check results: []
+?[32m21:26:06.541  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Not capturing Payment [100102], is in PmntPromised and not the Authorized status.
+?[32m21:26:06.833  INFO  Test worker                WorkPlanToCashBasicFlow?[m create Worker Time and Expense Invoice and record Payment data check results: 
+?[32m21:26:06.957  INFO  Test worker                WorkPlanToCashBasicFlow?[m create Client Time and Expense Invoice and Finalize data check results: 
+?[32m21:26:06.960  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Not capturing Payment [100103], is in PmntPromised and not the Authorized status.
+?[32m21:26:06.978  INFO  Test worker                WorkPlanToCashBasicFlow?[m record Payment for Client Time and Expense Invoice data check results: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

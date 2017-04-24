@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class OrderToCashTime</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class OrderToCashTime</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; OrderToCashTime</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.561s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Sales Order Time Check</td>
+<td>1.561s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[32m21:25:57.452  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [8.00] order part [100051:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [3] weight [7.5]
+?[32m21:25:57.463  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:8, productId:null, taxCode:null]], referenceId:100051:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:57.879  INFO  Test worker                        OrderToCashTime?[m [1/5 - 527] Created and shipped order 100051
+?[32m21:25:57.957  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [8.00] order part [100052:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [3] weight [7.5]
+?[32m21:25:57.961  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:8, productId:null, taxCode:null]], referenceId:100052:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:58.058  INFO  Test worker                        OrderToCashTime?[m [2/5 - 707] Created and shipped order 100052
+?[32m21:25:58.126  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [8.00] order part [100053:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [3] weight [7.5]
+?[32m21:25:58.130  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:8, productId:null, taxCode:null]], referenceId:100053:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:58.275  INFO  Test worker                        OrderToCashTime?[m [3/5 - 924] Created and shipped order 100053
+?[32m21:25:58.348  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [8.00] order part [100054:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [3] weight [7.5]
+?[32m21:25:58.353  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:8, productId:null, taxCode:null]], referenceId:100054:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:58.505  INFO  Test worker                        OrderToCashTime?[m [4/5 - 1154] Created and shipped order 100054
+?[32m21:25:58.580  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [8.00] order part [100055:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [3] weight [7.5]
+?[32m21:25:58.585  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:8, productId:null, taxCode:null]], referenceId:100055:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:58.912  INFO  Test worker                        OrderToCashTime?[m [5/5 - 1561] Created and shipped order 100055
+?[32m21:25:58.912  INFO  Test worker                        OrderToCashTime?[m Created and shipped 5 in 1.0 seconds, 5.0 orders per second
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at Nov 24, 2016 9:26:09 PM</p>
+</div>
+</div>
+</body>
+</html>

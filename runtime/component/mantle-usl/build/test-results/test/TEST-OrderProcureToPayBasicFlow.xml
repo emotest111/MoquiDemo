@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderProcureToPayBasicFlow" tests="19" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:25:51" hostname="dejcxps" time="4.552">
+  <properties/>
+  <testcase name="create Purchase Order" classname="OrderProcureToPayBasicFlow" time="0.265"/>
+  <testcase name="create Purchase Order Shipment and Schedule" classname="OrderProcureToPayBasicFlow" time="0.3"/>
+  <testcase name="set Shipment Shipped" classname="OrderProcureToPayBasicFlow" time="0.138"/>
+  <testcase name="receive Purchase Order Shipment" classname="OrderProcureToPayBasicFlow" time="1.228"/>
+  <testcase name="complete Purchase Order" classname="OrderProcureToPayBasicFlow" time="0.013"/>
+  <testcase name="validate Assets Received" classname="OrderProcureToPayBasicFlow" time="0.035"/>
+  <testcase name="validate Assets Receipt Accounting Transactions" classname="OrderProcureToPayBasicFlow" time="0.013"/>
+  <testcase name="process Purchase Invoice" classname="OrderProcureToPayBasicFlow" time="0.014"/>
+  <testcase name="approve Purchase Invoice" classname="OrderProcureToPayBasicFlow" time="0.049"/>
+  <testcase name="validate Purchase Invoice Accounting Transaction" classname="OrderProcureToPayBasicFlow" time="0.015"/>
+  <testcase name="adjust Purchase Invoice" classname="OrderProcureToPayBasicFlow" time="0.237"/>
+  <testcase name="send Purchase Invoice Payment" classname="OrderProcureToPayBasicFlow" time="0.556"/>
+  <testcase name="validate Purchase Payment Accounting Transaction" classname="OrderProcureToPayBasicFlow" time="0.01"/>
+  <testcase name="validate Purchase Payment Application Accounting Transaction" classname="OrderProcureToPayBasicFlow" time="0.01"/>
+  <testcase name="depreciate Fixed Assets" classname="OrderProcureToPayBasicFlow" time="0.361"/>
+  <testcase name="sell Depreciated Asset Loss" classname="OrderProcureToPayBasicFlow" time="0.926"/>
+  <testcase name="sell Depreciated Asset Gain" classname="OrderProcureToPayBasicFlow" time="0.15"/>
+  <testcase name="inventory Shrinkage" classname="OrderProcureToPayBasicFlow" time="0.187"/>
+  <testcase name="inventory Found" classname="OrderProcureToPayBasicFlow" time="0.044"/>
+  <system-out><![CDATA[?[32m21:25:52.214  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 223 fields
+?[32m21:25:52.378  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.Shipment pks: [shipmentId]
+?[32m21:25:52.383  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT for entity mantle.shipment.Shipment in group transactional
+?[32m21:25:52.407  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.ShipmentRouteSegment pks: [shipmentId, shipmentRouteSegmentSeqId]
+?[32m21:25:52.408  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT_ROUTE_SEGMENT for entity mantle.shipment.ShipmentRouteSegment in group transactional
+?[32m21:25:52.433  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.ShipmentItem pks: [shipmentId, productId]
+?[32m21:25:52.435  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT_ITEM for entity mantle.shipment.ShipmentItem in group transactional
+?[32m21:25:52.439  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.ShipmentItemSource pks: [shipmentItemSourceId]
+?[32m21:25:52.441  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT_ITEM_SOURCE for entity mantle.shipment.ShipmentItemSource in group transactional
+?[32m21:25:52.513  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 89 fields
+?[32m21:25:52.652  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 18 fields
+?[32m21:25:52.809  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.product.receipt.AssetReceipt pks: [assetReceiptId]
+?[32m21:25:52.811  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table ASSET_RECEIPT for entity mantle.product.receipt.AssetReceipt in group transactional
+?[32m21:25:53.804  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.OrderItemBilling pks: [orderItemBillingId]
+?[32m21:25:53.808  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table ORDER_ITEM_BILLING for entity mantle.order.OrderItemBilling in group transactional
+?[32m21:25:53.879  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 18 fields
+?[32m21:25:53.892  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 21 fields
+?[32m21:25:53.941  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 232 fields
+?[32m21:25:53.955  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 186 fields
+?[32m21:25:54.004  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 18 fields
+?[32m21:25:54.018  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 118 fields
+?[32m21:25:54.255  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 164 fields
+?[32m21:25:54.665  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Not capturing Payment [55400], is in PmntDelivered and not the Authorized status.
+?[32m21:25:54.753  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.payment.PaymentApplication pks: [paymentApplicationId]
+?[32m21:25:54.755  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table PAYMENT_APPLICATION for entity mantle.account.payment.PaymentApplication in group transactional
+?[32m21:25:54.811  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 64 fields
+?[32m21:25:54.822  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 58 fields
+?[32m21:25:54.832  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 58 fields
+?[32m21:25:54.929  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculating and posting depreciation for organizations: [ORG_ZIZI_RETAIL], assets: [55402, 55403]
+?[32m21:25:55.145  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.product.asset.AssetDepreciation pks: [assetId, timePeriodId]
+?[32m21:25:55.147  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table ASSET_DEPRECIATION for entity mantle.product.asset.AssetDepreciation in group transactional
+?[32m21:25:55.194  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 182 fields
+?[32m21:25:55.502  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.product.issuance.AssetIssuance pks: [assetIssuanceId]
+?[32m21:25:55.503  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table ASSET_ISSUANCE for entity mantle.product.issuance.AssetIssuance in group transactional
+?[32m21:25:55.752  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.ShipmentPackage pks: [shipmentId, shipmentPackageSeqId]
+?[32m21:25:55.754  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT_PACKAGE for entity mantle.shipment.ShipmentPackage in group transactional
+?[32m21:25:55.761  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.ShipmentPackageRouteSeg pks: [shipmentId, shipmentPackageSeqId, shipmentRouteSegmentSeqId]
+?[32m21:25:55.770  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT_PACKAGE_ROUTE_SEG for entity mantle.shipment.ShipmentPackageRouteSeg in group transactional
+?[32m21:25:55.783  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.shipment.ShipmentPackageContent pks: [shipmentId, shipmentPackageSeqId, productId]
+?[32m21:25:55.786  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SHIPMENT_PACKAGE_CONTENT for entity mantle.shipment.ShipmentPackageContent in group transactional
+?[32m21:25:56.026  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Not capturing Payment [55401], is in PmntPromised and not the Authorized status.
+?[32m21:25:56.119  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 245 fields
+?[32m21:25:56.234  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Not capturing Payment [55402], is in PmntPromised and not the Authorized status.
+?[32m21:25:56.270  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 269 fields
+?[32m21:25:56.354  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.product.asset.PhysicalInventory pks: [physicalInventoryId]
+?[32m21:25:56.358  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table PHYSICAL_INVENTORY for entity mantle.product.asset.PhysicalInventory in group transactional
+?[32m21:25:56.457  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 81 fields
+?[32m21:25:56.501  INFO  Test worker             OrderProcureToPayBasicFlow?[m Checked 125 fields
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

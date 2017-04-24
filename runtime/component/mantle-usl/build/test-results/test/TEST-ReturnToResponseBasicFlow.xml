@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReturnToResponseBasicFlow" tests="11" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:25:58" hostname="dejcxps" time="4.234">
+  <properties/>
+  <testcase name="create Return From Order" classname="ReturnToResponseBasicFlow" time="0.223"/>
+  <testcase name="approve Return" classname="ReturnToResponseBasicFlow" time="0.288"/>
+  <testcase name="receive Return Shipment" classname="ReturnToResponseBasicFlow" time="2.308"/>
+  <testcase name="validate Return Completed" classname="ReturnToResponseBasicFlow" time="0.015"/>
+  <testcase name="validate Replacement Order and Asset Reservation" classname="ReturnToResponseBasicFlow" time="0.023"/>
+  <testcase name="validate Refund Payment" classname="ReturnToResponseBasicFlow" time="0.014"/>
+  <testcase name="validate Customer Credit Financial Account Trans" classname="ReturnToResponseBasicFlow" time="0.016"/>
+  <testcase name="ship Replacement Order" classname="ReturnToResponseBasicFlow" time="0.056"/>
+  <testcase name="validate Replacement Order Complete" classname="ReturnToResponseBasicFlow" time="0.013"/>
+  <testcase name="validate Asset Issuance and Accounting Transactions" classname="ReturnToResponseBasicFlow" time="0.025"/>
+  <testcase name="purchase with return credit" classname="ReturnToResponseBasicFlow" time="1.251"/>
+  <system-out><![CDATA[?[32m21:25:58.969  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.return.ReturnHeader pks: [returnId]
+?[32m21:25:58.970  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table RETURN_HEADER for entity mantle.order.return.ReturnHeader in group transactional
+?[32m21:25:59.034  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.return.ReturnItem pks: [returnId, returnItemSeqId]
+?[32m21:25:59.042  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table RETURN_ITEM for entity mantle.order.return.ReturnItem in group transactional
+?[32m21:25:59.140  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 68 fields
+?[32m21:25:59.427  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 14 fields
+?[32m21:25:59.748  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.financial.FinancialAccount pks: [finAccountId]
+?[32m21:25:59.750  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table FINANCIAL_ACCOUNT for entity mantle.account.financial.FinancialAccount in group transactional
+?[32m21:25:59.819  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.financial.FinancialAccountTrans pks: [finAccountTransId]
+?[32m21:25:59.820  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table FINANCIAL_ACCOUNT_TRANS for entity mantle.account.financial.FinancialAccountTrans in group transactional
+?[33m21:26:00.858  WARN l-2-thread-1 .moqui.i.c.ExecutionContextFactoryImpl?[m Deferred ArtifactHit create queue size 1923 is greater than max creates per chunk 1000
+?[32m21:26:01.736  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 89 fields
+?[32m21:26:01.751  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 173 fields
+?[32m21:26:01.769  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 115 fields
+?[32m21:26:01.788  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 35 fields
+?[32m21:26:01.804  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 93 fields
+?[32m21:26:01.861  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 82 fields
+?[32m21:26:01.874  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 48 fields
+?[32m21:26:01.898  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 92 fields
+?[33m21:26:01.901  WARN  Test worker            o.moqui.i.u.MoquiShiroRealm?[m Not creating UserLoginHistory, found existing record for userId [CustJqp] and fromDate [2016-11-24 21:25:58.916]
+?[32m21:26:02.107  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [6.00] order part [55701:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [1] weight [0.5]
+?[32m21:26:02.213  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:6, productId:null, taxCode:null]], referenceId:55701:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:26:02.425  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.financial.FinancialAccountAuth pks: [finAccountAuthId]
+?[32m21:26:02.426  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table FINANCIAL_ACCOUNT_AUTH for entity mantle.account.financial.FinancialAccountAuth in group transactional
+?[33m21:26:02.682  WARN  Test worker            o.moqui.i.u.MoquiShiroRealm?[m Not creating UserLoginHistory, found existing record for userId [EX_JOHN_DOE] and fromDate [2016-11-24 21:25:58.916]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

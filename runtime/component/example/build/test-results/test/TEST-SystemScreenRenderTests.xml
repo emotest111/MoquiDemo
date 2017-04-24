@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SystemScreenRenderTests" tests="12" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:27:42" hostname="dejcxps" time="2.917">
+  <properties/>
+  <testcase name="render system screen EntitySync/EntitySyncList (Example sync, )" classname="SystemScreenRenderTests" time="0.968"/>
+  <testcase name="render system screen EntitySync/EntitySyncDetail?entitySyncId=EXAMPLE (john.doe, moqui.example.ExampleItem)" classname="SystemScreenRenderTests" time="0.392"/>
+  <testcase name="render system screen ../tools/Service/ServiceRun/run?serviceName=moqui.example.ExampleServices.produce#ExampleMessage&amp;systemMessageRemoteId=Example1Direct&amp;exampleId=TEST1 (, )" classname="SystemScreenRenderTests" time="0.081"/>
+  <testcase name="render system screen SystemMessage/Message/SystemMessageList (Example Message, Example1Local)" classname="SystemScreenRenderTests" time="0.306"/>
+  <testcase name="render system screen SystemMessage/Message/SystemMessageDetail?systemMessageId=100000 (Sent, 100001)" classname="SystemScreenRenderTests" time="0.281"/>
+  <testcase name="render system screen SystemMessage/Message/SystemMessageDetail/EditMessageText?systemMessageId=100000 (Test Example Name, EXST_IN_DESIGN)" classname="SystemScreenRenderTests" time="0.059"/>
+  <testcase name="render system screen SystemMessage/Remote/MessageRemoteList (Example Local, john.doe)" classname="SystemScreenRenderTests" time="0.077"/>
+  <testcase name="render system screen SystemMessage/Remote/MessageRemoteDetail?systemMessageRemoteId=Example1Local (Example Local, http://localhost:8080/rpc/json)" classname="SystemScreenRenderTests" time="0.057"/>
+  <testcase name="render system screen SystemMessage/Type/MessageTypeList (Example Message, moqui.example.ExampleServices.consume#ExampleMessage)" classname="SystemScreenRenderTests" time="0.057"/>
+  <testcase name="render system screen SystemMessage/Type/MessageTypeDetail?systemMessageTypeId=ExampleMessage (Example Message, moqui.example.ExampleServices.produce#ExampleMessage)" classname="SystemScreenRenderTests" time="0.054"/>
+  <testcase name="render system screen Visit/VisitList (john.doe, apps/system/SystemMessage)" classname="SystemScreenRenderTests" time="0.232"/>
+  <testcase name="render system screen Visit/VisitDetail?visitId=EX_VISIT (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1), component://tools/screen/Tools/Service/ServiceRun.xml#run)" classname="SystemScreenRenderTests" time="0.351"/>
+  <system-out><![CDATA[?[32m21:27:42.661  INFO enTestRender .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing webapp webroot http://null:null https://null:null https enabled? false
+?[32m21:27:43.495  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/EntitySync/EntitySyncList in 918ms (text/html) session TestSessionId
+?[32m21:27:43.888  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/EntitySync/EntitySyncDetail in 390ms (text/html) session TestSessionId
+?[32m21:27:43.967  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Service Run Results:
+systemMessageId: 100002
+
+?[32m21:27:43.969  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition apps/tools/Service/ServiceRun/run in 79ms, redirecting to screen path URL: http://localhost:8080/apps/tools/Service/ServiceRun?serviceName=moqui.example.ExampleServices.produce%23ExampleMessage
+?[32m21:27:44.275  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Message/SystemMessageList in 286ms (text/html) session TestSessionId
+?[32m21:27:44.557  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Message/SystemMessageDetail in 279ms (text/html) session TestSessionId
+?[32m21:27:44.615  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Message/SystemMessageDetail/EditMessageText in 57ms (text/html) session TestSessionId
+?[32m21:27:44.692  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Remote/MessageRemoteList in 76ms (text/html) session TestSessionId
+?[32m21:27:44.749  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Remote/MessageRemoteDetail in 55ms (text/html) session TestSessionId
+?[32m21:27:44.807  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Type/MessageTypeList in 56ms (text/html) session TestSessionId
+?[32m21:27:44.862  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Type/MessageTypeDetail in 49ms (text/html) session TestSessionId
+?[32m21:27:45.093  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/Visit/VisitList in 229ms (text/html) session TestSessionId
+?[32m21:27:45.443  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/Visit/VisitDetail in 348ms (text/html) session TestSessionId
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

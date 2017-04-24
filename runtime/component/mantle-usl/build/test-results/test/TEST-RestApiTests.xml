@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RestApiTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:26:07" hostname="dejcxps" time="1.471">
+  <properties/>
+  <testcase name="call Moqui Tools REST API (put, s1/mantle/orders/productQuantity, [55800])" classname="RestApiTests" time="0.298"/>
+  <testcase name="call Moqui Tools REST API (put, s1/mantle/orders/productQuantity, [55800, 01])" classname="RestApiTests" time="0.147"/>
+  <testcase name="call Moqui Tools REST API (put, s1/mantle/orders/55800/shippingBilling, [paymentId, 55800])" classname="RestApiTests" time="0.057"/>
+  <testcase name="call Moqui Tools REST API (post, s1/mantle/orders/55800/place, [&quot;statusChanged&quot;: true])" classname="RestApiTests" time="0.035"/>
+  <testcase name="call Moqui Tools REST API (get, s1/mantle/payments/55800, [CustJqpCc, PiCreditCard, PmntAuthorized, ORG_ZIZI_RETAIL])" classname="RestApiTests" time="0.031"/>
+  <testcase name="call Moqui Tools REST API (get, s1/mantle/orders/55800/items/01/reservations, [&quot;assetReservationId&quot;: &quot;55800&quot;, &quot;orderId&quot;: &quot;55800&quot;, &quot;productId&quot;: &quot;DEMO_1_1&quot;])" classname="RestApiTests" time="0.005"/>
+  <testcase name="call Moqui Tools REST API (post, s1/mantle/orders/55800/parts/01/shipments, [&quot;shipmentId&quot;: &quot;55800&quot;])" classname="RestApiTests" time="0.883"/>
+  <testcase name="call Moqui Tools REST API (get, s1/mantle/orders/55800/items/01/billings, [&quot;orderItemBillingId&quot;: &quot;55800&quot;, &quot;orderId&quot;: &quot;55800&quot;, &quot;orderItemSeqId&quot;: &quot;01&quot;, &quot;invoiceId&quot;: &quot;55800&quot;, &quot;assetIssuanceId&quot;: &quot;55800&quot;, &quot;shipmentId&quot;: &quot;55800&quot;])" classname="RestApiTests" time="0.003"/>
+  <testcase name="call Moqui Tools REST API (get, s1/mantle/orders/55800/items/01/shipments, [&quot;shipmentItemSourceId&quot;: &quot;55800&quot;, &quot;shipmentId&quot;: &quot;55800&quot;, &quot;productId&quot;: &quot;DEMO_1_1&quot;, &quot;orderId&quot;: &quot;55800&quot;, &quot;orderItemSeqId&quot;: &quot;01&quot;, &quot;invoiceId&quot;: &quot;55800&quot;])" classname="RestApiTests" time="0.003"/>
+  <testcase name="call Moqui Tools REST API (get, s1/mantle/orders/55800/items/01/issuances, [&quot;assetIssuanceId&quot;: &quot;55800&quot;, &quot;orderId&quot;: &quot;55800&quot;, &quot;orderItemSeqId&quot;: &quot;01&quot;, &quot;shipmentId&quot;: &quot;55800&quot;])" classname="RestApiTests" time="0.007"/>
+  <system-out><![CDATA[?[32m21:26:07.103  INFO enTestRender .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing webapp webroot http://null:null https://null:null https enabled? false
+?[32m21:26:07.137  INFO enTestRender                        o.m.i.s.RestApi?[m Loaded REST API from mantle.rest.xml (357 paths, 359 methods)
+?[32m21:26:07.138  INFO enTestRender                        o.m.i.s.RestApi?[m Loaded REST API files, 4 roots, in 7ms
+?[33m21:26:07.290  WARN enTestRender     o.drools.c.k.b.i.AbstractKieModule?[m No files found for KieBase TaxCalcKB
+?[32m21:26:07.292  INFO enTestRender     o.drools.c.k.b.i.KieRepositoryImpl?[m KieModule was added: MemoryKieModule[releaseId=org.moqui.mantle:mantle-usl:1.1.0]
+?[33m21:26:07.293  WARN enTestRender                   o.m.k.KieToolFactory?[m Found KIE session [ProductPriceKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:26:07.294  WARN enTestRender                   o.m.k.KieToolFactory?[m Found KIE session [TaxCalcKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:26:07.294  WARN enTestRender                   o.m.k.KieToolFactory?[m Found KIE session [OrderShippingRateKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[32m21:26:07.333  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/productQuantity in 264ms, type none response
+?[32m21:26:07.482  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/productQuantity in 145ms, type none response
+?[32m21:26:07.533  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [7.00] order part [55800:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [2] weight [10]
+?[32m21:26:07.537  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:2, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:7, productId:null, taxCode:null]], referenceId:55800:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:26:07.540  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/55800/shippingBilling in 54ms, type none response
+?[32m21:26:07.575  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/55800/place in 34ms, type none response
+?[32m21:26:07.604  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/payments/55800 in 26ms, type none response
+?[32m21:26:07.610  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/55800/items/01/reservations in 3ms, type none response
+?[32m21:26:08.492  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/55800/parts/01/shipments in 877ms, type none response
+?[32m21:26:08.500  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/55800/items/01/shipments in 2ms, type none response
+?[32m21:26:08.503  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition rest/s1/mantle/orders/55800/items/01/issuances in 2ms, type none response
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

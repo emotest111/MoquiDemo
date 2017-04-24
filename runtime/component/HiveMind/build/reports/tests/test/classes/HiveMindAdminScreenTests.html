@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class HiveMindAdminScreenTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class HiveMindAdminScreenTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; HiveMindAdminScreenTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">39</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">12.259s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/FinancialAccount/EditFinancialAccount?finAccountId=55700, [Ziziwork Retail, Joe Public, Current: Active])</td>
+<td>0.070s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/FinancialAccount/FinancialAccountTrans?finAccountId=55700, [Customer Service Credit, Ziziwork Retail ])</td>
+<td>0.255s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/GlAccount/EditGlAccount?glAccountId=110000000, [CASH AND EQUIVALENT ASSET, Ziziwork Industries])</td>
+<td>0.133s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Invoice/EditInvoice?invoiceId=55100, [Current: Approved, Unpaid $1,824.25, ORG_ZIZI_RETAIL])</td>
+<td>0.511s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Invoice/EditInvoice?invoiceId=55400, [ORG_ZIZI_RETAIL, Current: Payment Sent, Applied Payments $23,830.00])</td>
+<td>0.042s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Invoice/EditInvoiceItems?invoiceId=55400, [Demo Product One-One, Sales - Shipping and Handling])</td>
+<td>0.100s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Invoice/FindInvoice?statusId_op=in&amp;statusId=InvoiceReceived,InvoiceApproved&amp;toPartyId=ORG_ZIZI_RETAIL, [Ziddleman Incorporated, Ziziwork Retail, Sales/Purchase])</td>
+<td>0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Invoice/PrintInvoice?invoiceId=55400&amp;renderMode=xsl-fo, [1350 E. Flamingo Rd. #9876, Las Vegas, NV 89119-5263, Asset - Inventory])</td>
+<td>0.148s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Payment/EditPayment?paymentId=55400, [ORG_ZIZI_RETAIL, Applied $23,830.00, Current: Delivered])</td>
+<td>0.401s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Payment/PaymentCheck?paymentIds=55400&amp;renderMode=xsl-fo, [Ziddleman Incorporated, Twenty three thousand eight hundred thirty and 00/100, Picker Bot 2000])</td>
+<td>0.139s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Payment/PaymentDetail?paymentIds=55400&amp;renderMode=xsl-fo, [Ziddleman Incorporated, $23,830.00, Picker Bot 2000])</td>
+<td>0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/BalanceSheet?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100&amp;detail=true, [121000000: ACCOUNTS RECEIVABLE, 210000000: ACCOUNTS PAYABLE])</td>
+<td>0.520s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/CashFlowStatement?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100&amp;detail=true, [111100000: GENERAL CHECKING ACCOUNT, 182000000: ACCUMULATED DEPRECIATION - EQUIPMENT])</td>
+<td>0.175s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/FinancialRatios?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100, [Total Assets, Accounts Receivable])</td>
+<td>0.331s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/IncomeStatement?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100&amp;detail=true, [411000000: PRODUCT SALES, 614200000: NETWORK CHARGES])</td>
+<td>0.178s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/PostedAmountSummary?organizationPartyId=ORG_ZIZI_RETAIL&amp;dateRange_poffset=0&amp;dateRange_period=Year, [ACCOUNTS PAYABLE, DEPRECIATION - EQUIPMENT])</td>
+<td>0.178s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/PostedBalanceSummary?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodId=55100, [CUSTOMER SERVICE CREDITS (Contra Revenue), NET INCOME (Income)])</td>
+<td>0.104s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Reports/RetainedEarningsStatement?organizationPartyId=ORG_ZIZI_RETAIL&amp;timePeriodIdList=55100, [Net Earnings, Ziziwork Retail Fiscal])</td>
+<td>0.095s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Accounting/Transaction/EditTransaction?acctgTransId=55700, [Joe Public, 430000000, CUSTOMER SERVICE CREDITS])</td>
+<td>0.442s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Client/EditClient?partyId=ORG_ACME, [Another Company Making Everything, Accounts Payable, billing.acme@test.com])</td>
+<td>0.230s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Client/EditProjects?partyId=ORG_ACME, [HM - HiveMind PM Build Out, Customer - Bill To])</td>
+<td>0.052s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Client/EditUsers?partyId=ORG_ACME, [Acme, Client Manager])</td>
+<td>0.063s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (EditRateAmounts?partyId=EX_JOHN_DOE, [Standard, Client Billing, John Doe])</td>
+<td>0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Project/EditMilestones?rootWorkEffortId=HM, [HM Milestone 1, In Progress])</td>
+<td>0.098s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Project/EditProject?workEffortId=HM, [HiveMind PM Build Out, In Progress, Budget $10,000.00])</td>
+<td>0.221s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Project/EditUsers?rootWorkEffortId=HM, [john.doe, Ziziwork Services, Customer - Bill To])</td>
+<td>0.193s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Project/EditWikiPages?rootWorkEffortId=HM, [])</td>
+<td>0.116s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Team/EditTeam?partyId=ORG_ZIZI_DEVA, [Ziziwork Dev Team A])</td>
+<td>0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Team/EditUsers?partyId=ORG_ZIZI_DEVA, [Developer, Assignee])</td>
+<td>0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (User/EditProjects?partyId=EX_JOHN_DOE, [Manager, Programmer Lead, Assigned])</td>
+<td>0.133s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (User/EditRequests?partyId=EX_JOHN_DOE, [DEMO_001, Add Create Request on dashboard, Assignee])</td>
+<td>0.082s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (User/EditTasks?partyId=EX_JOHN_DOE, [HM-004, Dashboard My Tasks, Assigned])</td>
+<td>0.152s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (User/EditUser?partyId=EX_JOHN_DOE, [john.doe@test.com, John])</td>
+<td>0.287s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Vendor/Accounting/AcctgPreference?partyId=ORG_ZIZI_SERVICES, [Ziziwork Industries, Clone Accounting Settings])</td>
+<td>0.351s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Vendor/EditProjects?partyId=ORG_ZIZI_SERVICES, [HM - HiveMind PM Build Out, Vendor - Bill From])</td>
+<td>0.076s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Vendor/EditUsers?partyId=ORG_ZIZI_SERVICES, [Developer, Manager])</td>
+<td>0.243s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (Vendor/EditVendor?partyId=ORG_ZIZI_SERVICES, [Ziziwork Services, Internal, payment.biziwork.services@test.com])</td>
+<td>0.511s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screen (WikiSpace/EditWikiSpace?wikiSpaceId=DEMO, [Demo Wiki Space, DEMO.md])</td>
+<td>0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render HiveMind Admin screens with no required parameters</td>
+<td>5.382s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[32m21:26:18.784  INFO enTestRender .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing webapp webroot http://null:null https://null:null https enabled? false
+?[32m21:26:20.340  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/dashboard in 1601ms (text/html) session TestSessionId
+?[32m21:26:20.348  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered dashboard in 1642ms, 40155 characters
+?[32m21:26:20.593  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Vendor/FindVendor in 242ms (text/html) session TestSessionId
+?[32m21:26:20.593  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Vendor/FindVendor in 242ms, 35957 characters
+?[32m21:26:20.730  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Client/FindClient in 135ms (text/html) session TestSessionId
+?[32m21:26:20.730  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Client/FindClient in 135ms, 32627 characters
+?[32m21:26:20.866  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/User/FindUser in 135ms (text/html) session TestSessionId
+?[32m21:26:20.867  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered User/FindUser in 135ms, 56965 characters
+?[32m21:26:20.943  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Team/FindTeam in 74ms (text/html) session TestSessionId
+?[32m21:26:20.943  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Team/FindTeam in 74ms, 26215 characters
+?[32m21:26:21.292  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/EditRateAmounts in 348ms (text/html) session TestSessionId
+?[32m21:26:21.292  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered EditRateAmounts in 348ms, 70107 characters
+?[32m21:26:21.445  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/WikiSpace/FindWikiSpace in 151ms (text/html) session TestSessionId
+?[32m21:26:21.446  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered WikiSpace/FindWikiSpace in 153ms, 24671 characters
+?[32m21:26:21.618  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Project/FindProject in 171ms (text/html) session TestSessionId
+?[32m21:26:21.619  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Project/FindProject in 172ms, 38380 characters
+?[32m21:26:21.948  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Invoice/FindInvoice in 328ms (text/html) session TestSessionId
+?[32m21:26:21.949  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/Invoice/FindInvoice in 328ms, 66457 characters
+?[32m21:26:22.201  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Payment/FindPayment in 251ms (text/html) session TestSessionId
+?[32m21:26:22.202  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/Payment/FindPayment in 252ms, 50827 characters
+?[32m21:26:22.402  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/FinancialAccount/FindFinancialAccount in 198ms (text/html) session TestSessionId
+?[32m21:26:22.402  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/FinancialAccount/FindFinancialAccount in 198ms, 50474 characters
+?[32m21:26:22.731  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Transaction/FindTransaction in 327ms (text/html) session TestSessionId
+?[32m21:26:22.732  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/Transaction/FindTransaction in 328ms, 97284 characters
+?[32m21:26:23.019  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Transaction/FindTransactionEntry in 285ms (text/html) session TestSessionId
+?[32m21:26:23.020  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/Transaction/FindTransactionEntry in 285ms, 91532 characters
+?[32m21:26:23.154  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/FindJournal in 134ms (text/html) session TestSessionId
+?[32m21:26:23.154  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/FindJournal in 134ms, 50303 characters
+?[32m21:26:23.256  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/TimePeriod/FindTimePeriod in 101ms (text/html) session TestSessionId
+?[32m21:26:23.259  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/TimePeriod/FindTimePeriod in 104ms, 60721 characters
+?[32m21:26:23.468  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/GlAccount/FindGlAccount in 206ms (text/html) session TestSessionId
+?[32m21:26:23.470  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/GlAccount/FindGlAccount in 206ms, 82313 characters
+?[32m21:26:23.517  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/ReportList in 46ms (text/html) session TestSessionId
+?[32m21:26:23.518  INFO  Test worker               HiveMindAdminScreenTests?[m Rendered Accounting/Reports/ReportList in 46ms, 67061 characters
+?[32m21:26:24.036  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Vendor/EditVendor in 507ms (text/html) session TestSessionId
+?[32m21:26:24.113  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Vendor/EditProjects in 71ms (text/html) session TestSessionId
+?[32m21:26:24.358  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Vendor/EditUsers in 240ms (text/html) session TestSessionId
+?[32m21:26:24.708  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Vendor/Accounting/AcctgPreference in 348ms (text/html) session TestSessionId
+?[32m21:26:24.937  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Client/EditClient in 227ms (text/html) session TestSessionId
+?[32m21:26:24.991  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Client/EditProjects in 49ms (text/html) session TestSessionId
+?[32m21:26:25.053  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Client/EditUsers in 61ms (text/html) session TestSessionId
+?[32m21:26:25.340  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/User/EditUser in 283ms (text/html) session TestSessionId
+?[32m21:26:25.473  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/User/EditProjects in 131ms (text/html) session TestSessionId
+?[32m21:26:25.626  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/User/EditTasks in 148ms (text/html) session TestSessionId
+?[32m21:26:25.708  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/User/EditRequests in 80ms (text/html) session TestSessionId
+?[32m21:26:25.762  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Team/EditTeam in 52ms (text/html) session TestSessionId
+?[32m21:26:25.807  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Team/EditUsers in 43ms (text/html) session TestSessionId
+?[32m21:26:25.830  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/EditRateAmounts in 21ms (text/html) session TestSessionId
+?[32m21:26:25.887  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/WikiSpace/EditWikiSpace in 54ms (text/html) session TestSessionId
+?[32m21:26:26.110  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Project/EditProject in 220ms (text/html) session TestSessionId
+?[32m21:26:26.207  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Project/EditMilestones in 96ms (text/html) session TestSessionId
+?[32m21:26:26.401  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Project/EditUsers in 190ms (text/html) session TestSessionId
+?[32m21:26:26.517  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Project/EditWikiPages in 114ms (text/html) session TestSessionId
+?[32m21:26:26.555  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Invoice/FindInvoice in 32ms (text/html) session TestSessionId
+?[32m21:26:27.065  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Invoice/EditInvoice in 509ms (text/html) session TestSessionId
+?[32m21:26:27.108  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Invoice/EditInvoice in 38ms (text/html) session TestSessionId
+?[32m21:26:27.209  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Invoice/EditInvoiceItems in 100ms (text/html) session TestSessionId
+?[32m21:26:27.358  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Invoice/PrintInvoice in 148ms (text/xml) session TestSessionId
+?[32m21:26:27.760  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Payment/EditPayment in 395ms (text/html) session TestSessionId
+?[32m21:26:27.900  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Payment/PaymentCheck in 137ms (text/xml) session TestSessionId
+?[32m21:26:27.932  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Payment/PaymentDetail in 30ms (text/xml) session TestSessionId
+?[32m21:26:28.002  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/FinancialAccount/EditFinancialAccount in 68ms (text/html) session TestSessionId
+?[32m21:26:28.257  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/FinancialAccount/FinancialAccountTrans in 251ms (text/html) session TestSessionId
+?[32m21:26:28.701  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Transaction/EditTransaction in 439ms (text/html) session TestSessionId
+?[32m21:26:28.833  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/GlAccount/EditGlAccount in 131ms (text/html) session TestSessionId
+?[32m21:26:29.354  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/BalanceSheet in 520ms (text/html) session TestSessionId
+?[32m21:26:29.531  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/IncomeStatement in 175ms (text/html) session TestSessionId
+?[32m21:26:29.707  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/CashFlowStatement in 174ms (text/html) session TestSessionId
+?[32m21:26:29.802  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/RetainedEarningsStatement in 94ms (text/html) session TestSessionId
+?[32m21:26:30.133  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/FinancialRatios in 326ms (text/html) session TestSessionId
+?[32m21:26:30.311  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/PostedAmountSummary in 176ms (text/html) session TestSessionId
+?[32m21:26:30.415  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hmadmin/Accounting/Reports/PostedBalanceSummary in 97ms (text/html) session TestSessionId
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at Nov 24, 2016 9:26:37 PM</p>
+</div>
+</div>
+</body>
+</html>

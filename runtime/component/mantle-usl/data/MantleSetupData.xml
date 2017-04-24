@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This software is in the public domain under CC0 1.0 Universal plus a 
+Grant of Patent License.
+
+To the extent possible under law, the author(s) have dedicated all
+copyright and related and neighboring rights to this software to the
+public domain worldwide. This software is distributed without any
+warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication
+along with this software (see the LICENSE.md file). If not, see
+<http://creativecommons.org/publicdomain/zero/1.0/>.
+-->
+<entity-facade-xml type="seed">
+    <!-- User Group Preference for mantle content root, used in various services -->
+    <moqui.security.UserGroupPreference userGroupId="ALL_USERS" preferenceKey="mantle.content.root"
+            preferenceValue="dbresource://mantle/content"/>
+    <moqui.resource.DbResource resourceId="MANTLE" filename="mantle" isFile="N"/>
+    <moqui.resource.DbResource resourceId="MANTLE_CONTENT" filename="content" isFile="N" parentResourceId="MANTLE"/>
+
+    <!-- Artifact group for all of the Mantle REST API via the mantle resource (the root resource) -->
+    <artifactGroups artifactGroupId="MANTLE_API" description="Moqui Tools REST API (via root resource)">
+        <artifacts artifactTypeEnumId="AT_REST_PATH" artifactName="/mantle" inheritAuthz="Y"/>
+        <authz artifactAuthzId="MANTLE_API_ADMIN" userGroupId="ADMIN" authzTypeEnumId="AUTHZT_ALWAYS" authzActionEnumId="AUTHZA_ALL"/>
+    </artifactGroups>
+    <!-- Not enabled by default, risky having read/write access to all mantle data, here as an example for testing:
+    <moqui.security.ArtifactGroupMember artifactGroupId="MANTLE_API" artifactName="mantle\..*"
+            nameIsPattern="Y" artifactTypeEnumId="AT_ENTITY" inheritAuthz="Y"/>
+    -->
+
+    <!-- Special Permissions -->
+    <userPermissions userPermissionId="ORDER_APPROVE" description="Order Approve"/>
+    <userGroupPermissions userGroupId="ADMIN" userPermissionId="ORDER_APPROVE" fromDate="0"/>
+
+    <userPermissions userPermissionId="FISCAL_REOPEN" description="Fiscal Period Reopen"/>
+    <userGroupPermissions userGroupId="ADMIN" userPermissionId="FISCAL_REOPEN" fromDate="0"/>
+
+    <!-- Configuration for Internal Financial Account Payment Processing -->
+    <moqui.basic.Enumeration description="Financial Account" enumId="PgtFinancialAccount" enumTypeId="PaymentGatewayType"/>
+    <mantle.account.method.PaymentGatewayConfig paymentGatewayConfigId="FinancialAccountLocal"
+            paymentGatewayTypeEnumId="PgtFinancialAccount" description="Financial Account Local"
+            authorizeServiceName="mantle.account.FinancialAccountServices.authorize#FinancialAccountPayment"
+            captureServiceName="mantle.account.FinancialAccountServices.capture#FinancialAccountPayment"
+            releaseServiceName="mantle.account.FinancialAccountServices.release#FinancialAccountPayment"
+            refundServiceName="mantle.account.FinancialAccountServices.refund#FinancialAccountPayment"/>
+
+    <!-- Service Jobs: Payroll Processing -->
+    <moqui.security.user.NotificationTopic topic="ProcessTimePeriodPay" description="Payroll Period Process Pay Completed"
+            typeString="success" showAlert="Y" persistOnSend="Y" receiveNotifications="Y"
+            titleTemplate="Process Pay Completed for Payroll Period ${parameters.timePeriodId} for pay date ${ec.l10n.format(results.payDate, '')}, total pay ${ec.l10n.format(results.totalPayAmount, '0.00')}"
+            errorTitleTemplate="Error in Process Pay for Payroll Period ${parameters.timePeriodId}: ${serviceCallRun.errors}"
+            linkTemplate=""/>
+    <moqui.service.job.ServiceJob jobName="ProcessTimePeriodPay" description="Process Pay for Payroll Period"
+            serviceName="mantle.humanres.PayrollServices.process#TimePeriodPay" topic="ProcessTimePeriodPay"/>
+</entity-facade-xml>

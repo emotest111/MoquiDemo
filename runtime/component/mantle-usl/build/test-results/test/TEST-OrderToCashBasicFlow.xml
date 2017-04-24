@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OrderToCashBasicFlow" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:25:56" hostname="dejcxps" time="0.839">
+  <properties/>
+  <testcase name="create Sales Order" classname="OrderToCashBasicFlow" time="0.378"/>
+  <testcase name="validate Asset Reservation" classname="OrderToCashBasicFlow" time="0.013"/>
+  <testcase name="ship Sales Order" classname="OrderToCashBasicFlow" time="0.357"/>
+  <testcase name="validate Sales Order Complete" classname="OrderToCashBasicFlow" time="0.01"/>
+  <testcase name="validate Asset Issuance" classname="OrderToCashBasicFlow" time="0.014"/>
+  <testcase name="validate Asset Issuance Accounting Transactions" classname="OrderToCashBasicFlow" time="0.02"/>
+  <testcase name="validate Shipment Invoice" classname="OrderToCashBasicFlow" time="0.012"/>
+  <testcase name="validate Shipment Invoice Accounting Transaction" classname="OrderToCashBasicFlow" time="0.012"/>
+  <testcase name="validate Payment Accounting Transaction" classname="OrderToCashBasicFlow" time="0.016"/>
+  <system-out><![CDATA[?[33m21:25:56.693  WARN  Test worker     o.drools.c.k.b.i.AbstractKieModule?[m No files found for KieBase TaxCalcKB
+?[32m21:25:56.694  INFO  Test worker     o.drools.c.k.b.i.KieRepositoryImpl?[m KieModule was added: MemoryKieModule[releaseId=org.moqui.mantle:mantle-usl:1.1.0]
+?[33m21:25:56.695  WARN  Test worker                   o.m.k.KieToolFactory?[m Found KIE session [ProductPriceKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:25:56.695  WARN  Test worker                   o.m.k.KieToolFactory?[m Found KIE session [TaxCalcKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:25:56.695  WARN  Test worker                   o.m.k.KieToolFactory?[m Found KIE session [OrderShippingRateKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[32m21:25:56.830  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [55500:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [3] quantity [13] weight [21.5]
+?[32m21:25:56.837  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:16.99, productId:DEMO_1_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemProduct, quantity:5, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:03, itemTypeEnumId:ItemProduct, quantity:7, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:04, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:55500:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:25:56.886  INFO  Test worker                   OrderToCashBasicFlow?[m create Sales Order data check results: []
+?[32m21:25:56.899  INFO  Test worker                   OrderToCashBasicFlow?[m validate Asset Reservation data check results: 
+?[32m21:25:57.257  INFO  Test worker                   OrderToCashBasicFlow?[m ship Sales Order data check results: []
+?[32m21:25:57.268  INFO  Test worker                   OrderToCashBasicFlow?[m validate Sales Order Complete data check results: []
+?[32m21:25:57.284  INFO  Test worker                   OrderToCashBasicFlow?[m validate Asset Issuance data check results: 
+?[32m21:25:57.304  INFO  Test worker                   OrderToCashBasicFlow?[m validate Shipment Invoice Accounting Transaction data check results: 
+?[32m21:25:57.317  INFO  Test worker                   OrderToCashBasicFlow?[m validate Shipment Invoice data check results: []
+?[32m21:25:57.331  INFO  Test worker                   OrderToCashBasicFlow?[m validate Shipment Invoice Accounting Transaction data check results: 
+?[32m21:25:57.347  INFO  Test worker                   OrderToCashBasicFlow?[m validate Payment Accounting Transaction data check results: []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

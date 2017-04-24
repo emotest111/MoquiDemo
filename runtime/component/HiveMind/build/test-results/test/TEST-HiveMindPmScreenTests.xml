@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HiveMindPmScreenTests" tests="20" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:26:30" hostname="dejcxps" time="6.233">
+  <properties/>
+  <testcase name="render HiveMind PM screens with no required parameters" classname="HiveMindPmScreenTests" time="1.317"/>
+  <testcase name="render HiveMind PM screen (search?documentType=HmTask&amp;queryString=dash*, [HM-004, Dashboard My Tasks, Task Summary])" classname="HiveMindPmScreenTests" time="1.016"/>
+  <testcase name="render HiveMind PM screen (Project/ProjectSummary?workEffortId=HM, [HiveMind PM Build Out, HM Milestone 1, john.doe])" classname="HiveMindPmScreenTests" time="0.19"/>
+  <testcase name="render HiveMind PM screen (Project/MilestoneSummary?milestoneWorkEffortId=HM-MS-001, [HM-004, Dashboard My Tasks, New Feature])" classname="HiveMindPmScreenTests" time="0.384"/>
+  <testcase name="render HiveMind PM screen (Task/TaskSummary?workEffortId=HM-004, [HM-MS-001, In Progress, HM-005, DEMO_001, /Demo Page 2/Child Page 1, John Doe, also display remaining])" classname="HiveMindPmScreenTests" time="1.13"/>
+  <testcase name="render HiveMind PM screen (Task/TaskSummary/TaskCommentReply?workEffortId=HM-004&amp;parentCommEventId=HM-004-01, [Re: Remaining hours question])" classname="HiveMindPmScreenTests" time="0.05"/>
+  <testcase name="render HiveMind PM screen (Task/EditTask?workEffortId=HM-004, [For each task include a link, Dashboard My Tasks])" classname="HiveMindPmScreenTests" time="0.136"/>
+  <testcase name="render HiveMind PM screen (Task/EditTimeEntries?workEffortId=HM-004, [4.25, 8.00, Create Task and My Tasks first pass])" classname="HiveMindPmScreenTests" time="0.108"/>
+  <testcase name="render HiveMind PM screen (Task/EditUsers?workEffortId=HM-004, [john.doe, Ziziwork Dev Team A])" classname="HiveMindPmScreenTests" time="0.093"/>
+  <testcase name="render HiveMind PM screen (Task/EditRelated?workEffortId=HM-004, [HM-010, HM-005, Dashboard Create Task])" classname="HiveMindPmScreenTests" time="0.176"/>
+  <testcase name="render HiveMind PM screen (Task/EditRequests?workEffortId=HM-004, [DEMO_001, Add Create Request, New Feature])" classname="HiveMindPmScreenTests" time="0.063"/>
+  <testcase name="render HiveMind PM screen (Task/EditWikiPages?workEffortId=HM-004, [DEMO, Demo Page 2/Child Page 1])" classname="HiveMindPmScreenTests" time="0.078"/>
+  <testcase name="render HiveMind PM screen (Request/EditRequest?requestId=DEMO_001, [Add Create Request, New Feature])" classname="HiveMindPmScreenTests" time="0.107"/>
+  <testcase name="render HiveMind PM screen (Request/EditUsers?requestId=DEMO_001, [John, Assignee])" classname="HiveMindPmScreenTests" time="0.07"/>
+  <testcase name="render HiveMind PM screen (Request/EditTasks?requestId=DEMO_001, [HM-004, Dashboard My Tasks, New Feature])" classname="HiveMindPmScreenTests" time="0.067"/>
+  <testcase name="render HiveMind PM screen (Request/EditWikiPages?requestId=DEMO_001, [Add Wiki Page])" classname="HiveMindPmScreenTests" time="0.054"/>
+  <testcase name="render HiveMind PM screen (wiki/DEMO, [Move along, nothing to see here, john.doe])" classname="HiveMindPmScreenTests" time="0.893"/>
+  <testcase name="render HiveMind PM screen (wiki/DEMO/Demo+Page+1, [Demo Page 1, Section 1])" classname="HiveMindPmScreenTests" time="0.13"/>
+  <testcase name="render HiveMind PM screen (EditWikiPage?wikiSpaceId=DEMO, [## Demo Space Root Page])" classname="HiveMindPmScreenTests" time="0.152"/>
+  <testcase name="render HiveMind PM screen (EditWikiPage?wikiSpaceId=DEMO&amp;pagePath=Demo+Page+1, [## Demo Page 1])" classname="HiveMindPmScreenTests" time="0.017"/>
+  <system-out><![CDATA[?[32m21:26:30.545  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard in 48ms (text/html) session TestSessionId
+?[32m21:26:30.545  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard in 48ms, 16906 characters
+?[32m21:26:30.593  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard/MyMilestones in 45ms (text/html) session TestSessionId
+?[32m21:26:30.594  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard/MyMilestones in 46ms, 4457 characters
+?[32m21:26:30.621  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard/MyProjects in 25ms (text/html) session TestSessionId
+?[32m21:26:30.621  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard/MyProjects in 26ms, 2195 characters
+?[32m21:26:30.687  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard/MyRequests in 65ms (text/html) session TestSessionId
+?[32m21:26:30.688  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard/MyRequests in 66ms, 11826 characters
+?[32m21:26:30.805  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard/MyTasks in 116ms (text/html) session TestSessionId
+?[32m21:26:30.807  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard/MyTasks in 117ms, 33293 characters
+?[32m21:26:30.850  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard/MyWikiSpaces in 41ms (text/html) session TestSessionId
+?[32m21:26:30.851  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard/MyWikiSpaces in 41ms, 497 characters
+?[32m21:26:30.855  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/dashboard/QuickSearch in 2ms (text/html) session TestSessionId
+?[32m21:26:30.856  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered dashboard/QuickSearch in 2ms, 1021 characters
+?[32m21:26:30.941  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/search in 84ms (text/html) session TestSessionId
+?[32m21:26:30.944  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered search in 87ms, 19118 characters
+?[32m21:26:31.035  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Project/FindProject in 87ms (text/html) session TestSessionId
+?[32m21:26:31.036  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered Project/FindProject in 88ms, 29087 characters
+?[32m21:26:31.424  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/FindTask in 388ms (text/html) session TestSessionId
+?[32m21:26:31.428  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered Task/FindTask in 391ms, 69946 characters
+?[32m21:26:31.740  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Request/FindRequest in 309ms (text/html) session TestSessionId
+?[32m21:26:31.743  INFO  Test worker                  HiveMindPmScreenTests?[m Rendered Request/FindRequest in 310ms, 43734 characters
+?[32m21:26:32.759  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/search in 1010ms (text/html) session TestSessionId
+?[32m21:26:32.948  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Project/ProjectSummary in 186ms (text/html) session TestSessionId
+?[32m21:26:33.332  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Project/MilestoneSummary in 382ms (text/html) session TestSessionId
+?[32m21:26:34.462  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/TaskSummary in 1128ms (text/html) session TestSessionId
+?[32m21:26:34.513  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/TaskSummary/TaskCommentReply in 49ms (text/html) session TestSessionId
+?[32m21:26:34.649  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/EditTask in 134ms (text/html) session TestSessionId
+?[32m21:26:34.758  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/EditTimeEntries in 107ms (text/html) session TestSessionId
+?[32m21:26:34.850  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/EditUsers in 90ms (text/html) session TestSessionId
+?[32m21:26:35.019  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/EditRelated in 167ms (text/html) session TestSessionId
+?[32m21:26:35.089  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/EditRequests in 60ms (text/html) session TestSessionId
+?[32m21:26:35.167  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Task/EditWikiPages in 75ms (text/html) session TestSessionId
+?[32m21:26:35.274  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Request/EditRequest in 105ms (text/html) session TestSessionId
+?[32m21:26:35.345  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Request/EditUsers in 69ms (text/html) session TestSessionId
+?[32m21:26:35.413  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Request/EditTasks in 67ms (text/html) session TestSessionId
+?[32m21:26:35.443  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.request.WikiPageRequest pks: [wikiPageId, requestId]
+?[32m21:26:35.445  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Created table WIKI_PAGE_REQUEST for entity mantle.request.WikiPageRequest in group transactional
+?[32m21:26:35.466  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/Request/EditWikiPages in 52ms (text/html) session TestSessionId
+?[32m21:26:35.643  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.party.communication.WikiPageCommunicationEvent pks: [wikiPageId, communicationEventId]
+?[32m21:26:35.646  INFO enTestRender                   o.m.i.e.EntityDbMeta?[m Created table WIKI_PAGE_COMMUNICATION_EVENT for entity mantle.party.communication.WikiPageCommunicationEvent in group transactional
+?[32m21:26:36.359  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/wiki/DEMO in 891ms (text/html) session TestSessionId
+?[32m21:26:36.489  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/wiki/DEMO/Demo Page 1 in 128ms (text/html) session TestSessionId
+?[32m21:26:36.641  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/EditWikiPage in 151ms (text/html) session TestSessionId
+?[32m21:26:36.658  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/hm/EditWikiPage in 12ms (text/html) session TestSessionId
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

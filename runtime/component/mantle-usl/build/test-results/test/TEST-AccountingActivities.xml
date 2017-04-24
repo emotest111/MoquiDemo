@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AccountingActivities" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:25:46" hostname="dejcxps" time="2.509">
+  <properties/>
+  <testcase name="initial Investment AcctgTrans" classname="AccountingActivities" time="1.527"/>
+  <testcase name="record Retained Earnings and Dividends Distributable AcctgTrans" classname="AccountingActivities" time="0.077"/>
+  <testcase name="pay Dividends AcctgTrans" classname="AccountingActivities" time="0.056"/>
+  <testcase name="expense Invoice" classname="AccountingActivities" time="0.849"/>
+  <system-out><![CDATA[?[32m21:25:47.224  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.ledger.transaction.AcctgTrans pks: [acctgTransId]
+?[32m21:25:47.232  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table ACCTG_TRANS for entity mantle.ledger.transaction.AcctgTrans in group transactional
+?[32m21:25:47.414  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.ledger.transaction.AcctgTransEntry pks: [acctgTransId, acctgTransEntrySeqId]
+?[32m21:25:47.416  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table ACCTG_TRANS_ENTRY for entity mantle.ledger.transaction.AcctgTransEntry in group transactional
+?[32m21:25:47.836  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.ledger.account.GlAccountOrgTimePeriod pks: [glAccountId, organizationPartyId, timePeriodId]
+?[32m21:25:47.840  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table GL_ACCOUNT_ORG_TIME_PERIOD for entity mantle.ledger.account.GlAccountOrgTimePeriod in group transactional
+?[32m21:25:48.009  INFO  Test worker                   AccountingActivities?[m Checked 20 fields
+?[32m21:25:48.094  INFO  Test worker                   AccountingActivities?[m Checked 0 fields
+?[32m21:25:48.151  INFO  Test worker                   AccountingActivities?[m Checked 0 fields
+?[32m21:25:49.000  INFO  Test worker                   AccountingActivities?[m Checked 391 fields
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

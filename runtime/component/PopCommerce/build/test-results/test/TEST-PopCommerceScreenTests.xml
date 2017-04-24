@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PopCommerceScreenTests" tests="14" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:27:05" hostname="dejcxps" time="5.191">
+  <properties/>
+  <testcase name="render POP Commerce screen (Home, [Search products, Demo Product One-Two, $10,007.99])" classname="PopCommerceScreenTests" time="0.889"/>
+  <testcase name="render POP Commerce screen (Product/Detail/DEMO_1_1/Demo-Product-One-One, [Demo Product One-One, $16.99, Shipping Weight])" classname="PopCommerceScreenTests" time="0.09"/>
+  <testcase name="render POP Commerce screen (Product/Category/DEMO_ONE, [Demo Product One Unit, $1.00, Add to Cart])" classname="PopCommerceScreenTests" time="0.132"/>
+  <testcase name="render POP Commerce screen (Product/Search?keywords=demo, [Demo Product One Unit, $1.00, Demo Category One])" classname="PopCommerceScreenTests" time="0.236"/>
+  <testcase name="render POP Commerce screen (Customer/Profile, [joe@public.com, Visa ************1111, 1350 E. Flamingo Rd. #2345])" classname="PopCommerceScreenTests" time="0.722"/>
+  <testcase name="render POP Commerce screen (Customer/OrderHistory, [Completed, Approved, 55401])" classname="PopCommerceScreenTests" time="0.117"/>
+  <testcase name="render POP Commerce screen (Customer/OrderDetail?orderId=55401, [$9,000.00, 1-702-234-5678, Picker Bot 2000])" classname="PopCommerceScreenTests" time="0.109"/>
+  <testcase name="render POP Commerce screen (Home/addToCart?productId=DEMO_2_1&amp;quantity=10, [])" classname="PopCommerceScreenTests" time="0.46"/>
+  <testcase name="render POP Commerce screen (Order/Cart, [Demo Product Two-One, $121.20])" classname="PopCommerceScreenTests" time="0.475"/>
+  <testcase name="render POP Commerce screen (Order/Checkout, [Visa ************1111, 1350 E. Flamingo Rd. #2345, Ground Parcel $5.00])" classname="PopCommerceScreenTests" time="0.506"/>
+  <testcase name="render POP Commerce screen (Order/Checkout/setOrderBillingShippingInfo?paymentMethodId=CustJqpCc&amp;shippingPostalContactMechId=CustJqpAddr&amp;carrierAndShipmentMethod=_NA_:ShMthGround, [])" classname="PopCommerceScreenTests" time="0.35"/>
+  <testcase name="render POP Commerce screen (Order/Review, [Joe Q. Public, Demo Product Two-One, Shipping and Handling, Order Total: $126.20])" classname="PopCommerceScreenTests" time="0.196"/>
+  <testcase name="render POP Commerce screen (Order/Review/placeOrder, [])" classname="PopCommerceScreenTests" time="0.776"/>
+  <testcase name="render POP Commerce screen (Customer/OrderDetail?orderId=63200, [$126.20, 1-702-234-5678, Demo Product Two-One, Ground Parcel])" classname="PopCommerceScreenTests" time="0.129"/>
+  <system-out><![CDATA[?[33m21:27:06.025  WARN enTestRender     o.drools.c.k.b.i.AbstractKieModule?[m No files found for KieBase TaxCalcKB
+?[32m21:27:06.027  INFO enTestRender     o.drools.c.k.b.i.KieRepositoryImpl?[m KieModule was added: MemoryKieModule[releaseId=org.moqui.mantle:mantle-usl:1.1.0]
+?[33m21:27:06.028  WARN enTestRender                   o.m.k.KieToolFactory?[m Found KIE session [ProductPriceKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:27:06.029  WARN enTestRender                   o.m.k.KieToolFactory?[m Found KIE session [TaxCalcKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[33m21:27:06.029  WARN enTestRender                   o.m.k.KieToolFactory?[m Found KIE session [OrderShippingRateKS] in component [mantle-usl], replacing with session in component [mantle-usl]
+?[32m21:27:06.372  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Home in 888ms (text/html) session TestSessionId
+?[32m21:27:06.462  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Product/Detail/DEMO_1_1/Demo-Product-One-One in 89ms (text/html) session TestSessionId
+?[32m21:27:06.594  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Product/Category/DEMO_ONE in 128ms (text/html) session TestSessionId
+?[32m21:27:06.831  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Product/Search in 233ms (text/html) session TestSessionId
+?[32m21:27:07.552  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Customer/Profile in 720ms (text/html) session TestSessionId
+?[32m21:27:07.669  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Customer/OrderHistory in 115ms (text/html) session TestSessionId
+?[32m21:27:07.779  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Customer/OrderDetail in 106ms (text/html) session TestSessionId
+?[32m21:27:08.239  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition popc/Home/addToCart in 459ms, redirecting to screen path URL: http://localhost:8080/popc/Order/Cart
+?[32m21:27:08.240  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/popc/Order/Cart
+?[32m21:27:09.058  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [0] order part [63200:01] carrier [_NA_] method [ShMthPickUp] address [null] geos [[]] items [1] quantity [10] weight [20]
+?[32m21:27:09.103  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [63200:01] carrier [_NA_] method [ShMthGround] address [null] geos [[]] items [1] quantity [10] weight [20]
+?[32m21:27:09.142  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [30.00] order part [63200:01] carrier [_NA_] method [ShMthNextDay] address [null] geos [[]] items [1] quantity [10] weight [20]
+?[32m21:27:09.220  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Order/Checkout in 504ms (text/html) session TestSessionId
+?[32m21:27:09.361  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [5] order part [63200:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [10] weight [20]
+?[32m21:27:09.527  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1E+1, unitAmount:12.12, productId:DEMO_2_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:5, productId:null, taxCode:null]], referenceId:63200:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:27:09.571  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition popc/Order/Checkout/setOrderBillingShippingInfo in 349ms, redirecting to screen path URL: http://localhost:8080/popc/Order/Review
+?[32m21:27:09.571  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/popc/Order/Review
+?[32m21:27:09.768  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Order/Review in 196ms (text/html) session TestSessionId
+?[32m21:27:10.544  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition popc/Order/Review/placeOrder in 775ms, redirecting to screen path URL: http://localhost:8080/popc/Customer/OrderDetail?orderId=63200
+?[32m21:27:10.545  INFO enTestRender              o.moqui.i.s.WebFacadeStub?[m HttpServletResponseStub sendRedirect to: http://localhost:8080/popc/Customer/OrderDetail?orderId=63200
+?[32m21:27:10.674  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m popc/Customer/OrderDetail in 126ms (text/html) session TestSessionId
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

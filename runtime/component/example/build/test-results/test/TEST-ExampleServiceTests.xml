@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ExampleServiceTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-11-25T05:27:37" hostname="dejcxps" time="4.944">
+  <properties/>
+  <testcase name="create example with ExampleServices" classname="ExampleServiceTests" time="0.398"/>
+  <testcase name="call ExampleCompiled echo method" classname="ExampleServiceTests" time="0.009"/>
+  <testcase name="call localCamelExample service" classname="ExampleServiceTests" time="0.272"/>
+  <testcase name="send and consume ExampleMessage" classname="ExampleServiceTests" time="4.263"/>
+  <system-out><![CDATA[?[32m21:27:37.660  INFO  Test worker           o.moqui.i.e.EntityFacadeImpl?[m Created 1295 automatic reverse relationships
+?[32m21:27:37.708  INFO  Test worker             o.moqui.i.e.EntityDataFeed?[m Built entity.data.feed.info cache for in 104ms, entries for 31 entities
+?[33m21:27:37.862  WARN  Test worker       o.moqui.i.s.r.CamelServiceRunner?[m No consumer found for service [moqui.example.ExampleServices.localCamelExample], using ProducerTemplate to send the message
+?[32m21:27:37.906  INFO  Test worker     o.moqui.i.s.c.MoquiServiceProducer?[m Calling service [moqui.example.ExampleServices.targetCamelExample] with parameters [[testInput:Input]]
+?[32m21:27:38.104  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m targetCamelExample testOutput: 'Input was: Input'
+?[32m21:27:38.104  INFO  Test worker     o.moqui.i.s.c.MoquiServiceProducer?[m Service [moqui.example.ExampleServices.targetCamelExample] result [[testOutput:Input was: Input]]
+?[32m21:27:38.264  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for moqui.service.message.SystemMessage pks: [systemMessageId]
+?[32m21:27:38.269  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table SYSTEM_MESSAGE for entity moqui.service.message.SystemMessage in group transactional
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

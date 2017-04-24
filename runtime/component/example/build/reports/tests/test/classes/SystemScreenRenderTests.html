@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class SystemScreenRenderTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class SystemScreenRenderTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; SystemScreenRenderTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.915s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">render system screen ../tools/Service/ServiceRun/run?serviceName=moqui.example.ExampleServices.produce#ExampleMessage&amp;systemMessageRemoteId=Example1Direct&amp;exampleId=TEST1 (, )</td>
+<td>0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen EntitySync/EntitySyncDetail?entitySyncId=EXAMPLE (john.doe, moqui.example.ExampleItem)</td>
+<td>0.392s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen EntitySync/EntitySyncList (Example sync, )</td>
+<td>0.968s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Message/SystemMessageDetail/EditMessageText?systemMessageId=100000 (Test Example Name, EXST_IN_DESIGN)</td>
+<td>0.059s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Message/SystemMessageDetail?systemMessageId=100000 (Sent, 100001)</td>
+<td>0.281s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Message/SystemMessageList (Example Message, Example1Local)</td>
+<td>0.306s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Remote/MessageRemoteDetail?systemMessageRemoteId=Example1Local (Example Local, http://localhost:8080/rpc/json)</td>
+<td>0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Remote/MessageRemoteList (Example Local, john.doe)</td>
+<td>0.077s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Type/MessageTypeDetail?systemMessageTypeId=ExampleMessage (Example Message, moqui.example.ExampleServices.produce#ExampleMessage)</td>
+<td>0.054s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen SystemMessage/Type/MessageTypeList (Example Message, moqui.example.ExampleServices.consume#ExampleMessage)</td>
+<td>0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen Visit/VisitDetail?visitId=EX_VISIT (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1), component://tools/screen/Tools/Service/ServiceRun.xml#run)</td>
+<td>0.351s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">render system screen Visit/VisitList (john.doe, apps/system/SystemMessage)</td>
+<td>0.232s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[32m21:27:42.661  INFO enTestRender .moqui.i.c.ExecutionContextFactoryImpl?[m Initializing webapp webroot http://null:null https://null:null https enabled? false
+?[32m21:27:43.495  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/EntitySync/EntitySyncList in 918ms (text/html) session TestSessionId
+?[32m21:27:43.888  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/EntitySync/EntitySyncDetail in 390ms (text/html) session TestSessionId
+?[32m21:27:43.967  INFO enTestRender           o.moqui.i.c.LoggerFacadeImpl?[m Service Run Results:
+systemMessageId: 100002
+
+?[32m21:27:43.969  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m Transition apps/tools/Service/ServiceRun/run in 79ms, redirecting to screen path URL: http://localhost:8080/apps/tools/Service/ServiceRun?serviceName=moqui.example.ExampleServices.produce%23ExampleMessage
+?[32m21:27:44.275  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Message/SystemMessageList in 286ms (text/html) session TestSessionId
+?[32m21:27:44.557  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Message/SystemMessageDetail in 279ms (text/html) session TestSessionId
+?[32m21:27:44.615  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Message/SystemMessageDetail/EditMessageText in 57ms (text/html) session TestSessionId
+?[32m21:27:44.692  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Remote/MessageRemoteList in 76ms (text/html) session TestSessionId
+?[32m21:27:44.749  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Remote/MessageRemoteDetail in 55ms (text/html) session TestSessionId
+?[32m21:27:44.807  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Type/MessageTypeList in 56ms (text/html) session TestSessionId
+?[32m21:27:44.862  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/SystemMessage/Type/MessageTypeDetail in 49ms (text/html) session TestSessionId
+?[32m21:27:45.093  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/Visit/VisitList in 229ms (text/html) session TestSessionId
+?[32m21:27:45.443  INFO enTestRender           o.moqui.i.s.ScreenRenderImpl?[m apps/system/Visit/VisitDetail in 348ms (text/html) session TestSessionId
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at Nov 24, 2016 9:27:46 PM</p>
+</div>
+</div>
+</body>
+</html>

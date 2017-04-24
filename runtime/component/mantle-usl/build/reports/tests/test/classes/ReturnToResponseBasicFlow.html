@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ReturnToResponseBasicFlow</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ReturnToResponseBasicFlow</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; ReturnToResponseBasicFlow</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.232s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">approve Return</td>
+<td>0.288s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">create Return From Order</td>
+<td>0.223s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">purchase with return credit</td>
+<td>1.251s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">receive Return Shipment</td>
+<td>2.308s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">ship Replacement Order</td>
+<td>0.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Asset Issuance and Accounting Transactions</td>
+<td>0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Customer Credit Financial Account Trans</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Refund Payment</td>
+<td>0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Replacement Order Complete</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Replacement Order and Asset Reservation</td>
+<td>0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validate Return Completed</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[32m21:25:58.969  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.return.ReturnHeader pks: [returnId]
+?[32m21:25:58.970  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table RETURN_HEADER for entity mantle.order.return.ReturnHeader in group transactional
+?[32m21:25:59.034  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.order.return.ReturnItem pks: [returnId, returnItemSeqId]
+?[32m21:25:59.042  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table RETURN_ITEM for entity mantle.order.return.ReturnItem in group transactional
+?[32m21:25:59.140  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 68 fields
+?[32m21:25:59.427  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 14 fields
+?[32m21:25:59.748  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.financial.FinancialAccount pks: [finAccountId]
+?[32m21:25:59.750  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table FINANCIAL_ACCOUNT for entity mantle.account.financial.FinancialAccount in group transactional
+?[32m21:25:59.819  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.financial.FinancialAccountTrans pks: [finAccountTransId]
+?[32m21:25:59.820  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table FINANCIAL_ACCOUNT_TRANS for entity mantle.account.financial.FinancialAccountTrans in group transactional
+?[33m21:26:00.858  WARN l-2-thread-1 .moqui.i.c.ExecutionContextFactoryImpl?[m Deferred ArtifactHit create queue size 1923 is greater than max creates per chunk 1000
+?[32m21:26:01.736  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 89 fields
+?[32m21:26:01.751  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 173 fields
+?[32m21:26:01.769  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 115 fields
+?[32m21:26:01.788  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 35 fields
+?[32m21:26:01.804  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 93 fields
+?[32m21:26:01.861  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 82 fields
+?[32m21:26:01.874  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 48 fields
+?[32m21:26:01.898  INFO  Test worker              ReturnToResponseBasicFlow?[m Checked 92 fields
+?[33m21:26:01.901  WARN  Test worker            o.moqui.i.u.MoquiShiroRealm?[m Not creating UserLoginHistory, found existing record for userId [CustJqp] and fromDate [2016-11-24 21:25:58.916]
+?[32m21:26:02.107  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Calculated shippingTotal [6.00] order part [55701:01] carrier [_NA_] method [ShMthGround] address [CustJqpAddr] geos [[USA, USA_NV]] items [1] quantity [1] weight [0.5]
+?[32m21:26:02.213  INFO  Test worker           o.moqui.i.c.LoggerFacadeImpl?[m Called calculate#SalesTaxLocal (not yet implemented) with context:
+ [result:[:], taxGatewayConfigId:LOCAL, destinationAddressContactMechId:CustJqpAddr, context:(this Map), organizationPartyId:ORG_ZIZI_RETAIL, originAddressContactMechId:null, saveResults:false, items:[[itemId:01, itemTypeEnumId:ItemProduct, quantity:1, unitAmount:7.77, productId:DEMO_3_1, taxCode:null], [itemId:02, itemTypeEnumId:ItemShipping, quantity:1, unitAmount:6, productId:null, taxCode:null]], referenceId:55701:01, ec:ExecutionContext, customerPartyId:CustJqp]
+?[32m21:26:02.425  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Creating table for mantle.account.financial.FinancialAccountAuth pks: [finAccountAuthId]
+?[32m21:26:02.426  INFO  Test worker                   o.m.i.e.EntityDbMeta?[m Created table FINANCIAL_ACCOUNT_AUTH for entity mantle.account.financial.FinancialAccountAuth in group transactional
+?[33m21:26:02.682  WARN  Test worker            o.moqui.i.u.MoquiShiroRealm?[m Not creating UserLoginHistory, found existing record for userId [EX_JOHN_DOE] and fromDate [2016-11-24 21:25:58.916]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.2</a> at Nov 24, 2016 9:26:09 PM</p>
+</div>
+</div>
+</body>
+</html>
